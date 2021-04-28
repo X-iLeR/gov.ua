@@ -185,13 +185,15 @@ svg {
     padding: 0 15px;
 }
 
-.main-menu .dropdown.submenu-open > div > ul > li:not(.submenu-open) {
+.main-menu .dropdown-container.submenu-open > div > ul > li:not(.submenu-open) {
     display: none;
 }
-.dropdown.show > .dropdown-menu {
+
+.dropdown-container.show > .dropdown-menu {
     display: block;
 }
-.dropdown.show.submenu-open > .dropdown-menu {
+
+.dropdown-container.show.submenu-open > .dropdown-menu {
     background: transparent;
 }
 
@@ -859,13 +861,15 @@ a.item-gallery,
 
 .first-level-link .line,
 .item-gallery.more .ellipse,
-.button-more-topics,
-.tabs-type-second-level > .nav-item:nth-child(n+7),
 .back-first-level,
 .item-gallery .header-item,
 .item-gallery .description,
 .item-gallery:hover .image {
     display: none;
+}
+
+.tabs-type-second-level > .nav-item:nth-child(n+7), .button-more-topics {
+
 }
 
 .message-block .image img,
@@ -892,4 +896,22 @@ a.item-gallery,
 .page-news-list .news:not(:last-child),
 .banners-container .banner {
     margin-bottom: 24px;
+}
+
+.listWithMore ul {
+    flex-wrap: nowrap;
+}
+
+.listWithMore ul a {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    flex-flow: nowrap;
+}
+
+.moreContainer ul li:not(:first-child) {
+    display: none;
+}
+
+.moreContainer.open ul li {
+    display: block;
 }

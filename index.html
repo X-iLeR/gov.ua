@@ -288,7 +288,7 @@
 
                     <div class="collapse navbar-collapse" id="mainMenu">
                         <ul class="navbar-nav nav-fill w-100">
-                            <li class="nav-item first-level dropdown">
+                            <li class="nav-item first-level dropdown-container">
                                 <a aria-expanded="false" aria-haspopup="true"
                                    class="nav-link d-flex align-items-center first-level-link"
                                    href="#"
@@ -467,7 +467,7 @@
                                     <span class="line"></span>
                                 </a>
                             </li>
-                            <li class="nav-item first-level dropdown">
+                            <li class="nav-item first-level dropdown-container">
                                 <a aria-expanded="false" aria-haspopup="true"
                                    class="nav-link d-flex align-items-center first-level-link"
                                    href="#"
@@ -712,7 +712,7 @@
             </ul>
             <div class="d-flex align-items-start pagination">
                 <div>
-                    <div class="icon icon-inactive">
+                    <div class="icon icon-inactive" onclick="prevNews(event)">
                         <svg height="31px" viewBox="0 0 30 30" width="28px" xmlns="http://www.w3.org/2000/svg">
                             <title>keyboard-arrow</title>
                             <g data-name="Layer 10" id="Layer_10">
@@ -721,7 +721,7 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="icon transform-right-arrov">
+                    <div class="icon transform-right-arrov" onclick="nextNews(event)">
                         <svg height="31px" viewBox="0 0 30 30" width="28px" xmlns="http://www.w3.org/2000/svg">
                             <title>keyboard-arrow</title>
                             <g data-name="Layer 10" id="Layer_10">
@@ -747,133 +747,111 @@
         <div class="row">
             <div class="col-xl-9 col-lg-12 tab-content" id="tabVse">
                 <div aria-labelledby="vse-tab" class="tab-pane fade show active" id="vse" role="tabpanel">
-                    <ul class="nav nav-tabs tags tabs-type-second-level" id="secondLevelTabs" role="tablist">
-                        <li class="nav-item">
-                            <a aria-controls="usiTemy" aria-selected="true" class="nav-link active" data-toggle="tab"
-                               href="#usiTemy"
-                               id="usiTemy-tab" role="tab">Усі теми</a>
-                        </li>
-                        <li class="nav-item">
-                            <a aria-controls="budivnictvo" aria-selected="false" class="nav-link" data-toggle="tab"
-                               href="#budivnictvo"
-                               id="budivnictvo-tab" role="tab">Будивництво</a>
-                        </li>
-                        <li class="nav-item">
-                            <a aria-controls="navchannya" aria-selected="false" class="nav-link" data-toggle="tab"
-                               href="#navchannya"
-                               id="navchannya-tab" role="tab">Навчання</a>
-                        </li>
-                        <li class="nav-item">
-                            <a aria-controls="medicina" aria-selected="false" class="nav-link" data-toggle="tab"
-                               href="#medicina"
-                               id="medicina-tab" role="tab">Медицина</a>
-                        </li>
-                        <li class="nav-item">
-                            <a aria-controls="sport" aria-selected="false" class="nav-link" data-toggle="tab"
-                               href="#sport"
-                               id="sport-tab" role="tab">Спорт</a>
-                        </li>
-                        <li class="nav-item">
-                            <a aria-controls="programaMera" aria-selected="false" class="nav-link" data-toggle="tab"
-                               href="#programaMera"
-                               id="programaMera-tab" role="tab">Програма мера</a>
-                        </li>
-                        <li class="nav-item">
-                            <a aria-controls="industrіalnyyTuryzm" aria-selected="false" class="nav-link"
-                               data-toggle="tab" href="#industrіalnyyTuryzm"
-                               id="industrіalnyyTuryzm-tab" role="tab">Індустріальний туризм</a>
-                        </li>
-                        <li class="nav-item">
-                            <a aria-controls="zakonodavstvo2" aria-selected="false" class="nav-link"
-                               data-toggle="tab"
-                               href="#zakonodavstvoTab"
-                               id="zakonodavstvoTab-tab" role="tab">Законодавство</a>
-                        </li>
-                        <li class="nav-item">
-                            <a aria-controls="sesii" aria-selected="false" class="nav-link" data-toggle="tab"
-                               href="#sesii"
-                               id="sesii-tab" role="tab">Сесії</a>
-                        </li>
-                        <li class="nav-item">
-                            <a aria-controls="proekty" aria-selected="false" class="nav-link"
-                               data-toggle="tab"
-                               href="#proekty"
-                               id="proekty-tab" role="tab">Проекти</a>
-                        </li>
-                        <li class="nav-item">
-                            <a aria-controls="blagoustriy" aria-selected="false" class="nav-link"
-                               data-toggle="tab"
-                               href="#blagoustriy"
-                               id="blagoustriy-tab" role="tab">Благоустрій</a>
-                        </li>
-                        <li class="nav-item">
-                            <a aria-controls="kultura" aria-selected="false" class="nav-link"
-                               data-toggle="tab"
-                               href="#kultura"
-                               id="kultura-tab" role="tab">Культура</a>
-                        </li>
-                        <li class="nav-item">
-                            <a aria-controls="vidkrytiStoly" aria-selected="false" class="nav-link"
-                               data-toggle="tab"
-                               href="#vidkrytiStoly"
-                               id="vidkrytiStoly-tab" role="tab">Відкриті
-                                столи</a>
-                        </li>
-                        <li class="nav-item button-more-topics">
-                            <div class="position-relative item">
-                                <ul class="nav nav-pills">
-                                    <li class="nav-item dropdown">
-                                        <div aria-expanded="false" aria-haspopup="true"
-                                             class="submenu-button d-flex align-items-center" data-toggle="dropdown"
-                                             id="ischeTemyMenu"
-                                             role="button">
-                                            <span class="nav-link">Іще теми</span>
-                                            <div class="icon icon-arrow-type2">
-                                                <svg height="9px"
-                                                     id="Capa_1" style="enable-background:new 0 0 451.847 451.847;"
-                                                     version="1.1" viewBox="0 0 451.847 451.847" width="13px" x="0px"
-                                                     xml:space="preserve"
-                                                     xmlns="http://www.w3.org/2000/svg"
-                                                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                     y="0px">
+                    <div class="listWithMore">
+                        <ul class="nav d-inline-flex nav-tabs tags tabs-type-second-level" id="secondLevelTabs"
+                            role="tablist">
+                            <li class="nav-item">
+                                <a aria-controls="usiTemy" aria-selected="true" class="nav-link active"
+                                   data-toggle="tab"
+                                   href="#usiTemy"
+                                   id="usiTemy-tab" role="tab">Усі теми</a>
+                            </li>
+                            <li class="nav-item">
+                                <a aria-controls="budivnictvo" aria-selected="false" class="nav-link" data-toggle="tab"
+                                   href="#budivnictvo"
+                                   id="budivnictvo-tab" role="tab">Будивництво</a>
+                            </li>
+                            <li class="nav-item">
+                                <a aria-controls="navchannya" aria-selected="false" class="nav-link" data-toggle="tab"
+                                   href="#navchannya"
+                                   id="navchannya-tab" role="tab">Навчання</a>
+                            </li>
+                            <li class="nav-item">
+                                <a aria-controls="medicina" aria-selected="false" class="nav-link" data-toggle="tab"
+                                   href="#medicina"
+                                   id="medicina-tab" role="tab">Медицина</a>
+                            </li>
+                            <li class="nav-item">
+                                <a aria-controls="sport" aria-selected="false" class="nav-link" data-toggle="tab"
+                                   href="#sport"
+                                   id="sport-tab" role="tab">Спорт</a>
+                            </li>
+                            <li class="nav-item">
+                                <a aria-controls="programaMera" aria-selected="false" class="nav-link" data-toggle="tab"
+                                   href="#programaMera"
+                                   id="programaMera-tab" role="tab">Програма мера</a>
+                            </li>
+                            <li class="nav-item">
+                                <a aria-controls="industrіalnyyTuryzm" aria-selected="false" class="nav-link"
+                                   data-toggle="tab" href="#industrіalnyyTuryzm"
+                                   id="industrіalnyyTuryzm-tab" role="tab">Індустріальний туризм</a>
+                            </li>
+                            <li class="nav-item">
+                                <a aria-controls="zakonodavstvo2" aria-selected="false" class="nav-link"
+                                   data-toggle="tab"
+                                   href="#zakonodavstvoTab"
+                                   id="zakonodavstvoTab-tab" role="tab">Законодавство</a>
+                            </li>
+                            <li class="nav-item">
+                                <a aria-controls="sesii" aria-selected="false" class="nav-link" data-toggle="tab"
+                                   href="#sesii"
+                                   id="sesii-tab" role="tab">Сесії</a>
+                            </li>
+                            <li class="nav-item">
+                                <a aria-controls="proekty" aria-selected="false" class="nav-link"
+                                   data-toggle="tab"
+                                   href="#proekty"
+                                   id="proekty-tab" role="tab">Проекти</a>
+                            </li>
+                            <li class="nav-item">
+                                <a aria-controls="blagoustriy" aria-selected="false" class="nav-link"
+                                   data-toggle="tab"
+                                   href="#blagoustriy"
+                                   id="blagoustriy-tab" role="tab">Благоустрій</a>
+                            </li>
+                            <li class="nav-item">
+                                <a aria-controls="kultura" aria-selected="false" class="nav-link"
+                                   data-toggle="tab"
+                                   href="#kultura"
+                                   id="kultura-tab" role="tab">Культура</a>
+                            </li>
+                            <li class="nav-item">
+                                <a aria-controls="vidkrytiStoly" aria-selected="false" class="nav-link"
+                                   data-toggle="tab"
+                                   href="#vidkrytiStoly"
+                                   id="vidkrytiStoly-tab" role="tab">Відкриті
+                                    столи</a>
+                            </li>
+                            <li class="nav-item button-more-topics">
+                                <div class="position-relative item">
+                                    <div class="moreContainer">
+                                        <ul>
+                                            <li>
+                                                <div class="moreBtn">
+                                                    <span class="nav-link">Іще теми</span>
+                                                    <div class="icon open icon-arrow-type2">
+                                                        <svg height="9px"
+                                                             id="Capa_1"
+                                                             style="enable-background:new 0 0 451.847 451.847;"
+                                                             version="1.1" viewBox="0 0 451.847 451.847"
+                                                             width="13px" x="0px"
+                                                             xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             y="0px">
 <g>
 	<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751   c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0   c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
 </g>
 </svg>
-                                            </div>
-                                        </div>
-                                        <div aria-labelledby="ischeTemy" class="dropdown-menu submenu">
-                                            <ul>
-                                                <li>
-                                                    <div aria-expanded="false"
-                                                         aria-haspopup="true"
-                                                         class="submenu-button d-flex align-items-center"
-                                                         data-toggle="dropdown"
-                                                         role="button">
-                                                        <span class="nav-link">Іще теми</span>
-                                                        <div class="icon open icon-arrow-type2">
-                                                            <svg height="9px"
-                                                                 id="Capa_1"
-                                                                 style="enable-background:new 0 0 451.847 451.847;"
-                                                                 version="1.1" viewBox="0 0 451.847 451.847"
-                                                                 width="13px" x="0px"
-                                                                 xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                                                                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                                 y="0px">
-<g>
-	<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751   c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0   c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
-</g>
-</svg>
-                                                        </div>
                                                     </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
                     <div class="tab-content" id="myTabContent2">
                         <div aria-labelledby="usiTemy-tab" class="tab-pane fade show active" id="usiTemy"
                              role="tabpanel">

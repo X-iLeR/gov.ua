@@ -1,0 +1,87 @@
+@media (max-width: 1200px) {
+    .gradient > div {
+        position: relative;
+    }
+
+    .center-header > div {
+        max-width: 455px;
+    }
+
+    .right-header {
+        order: -1;
+        padding-top: 0;
+    }
+
+    .right-header .navbar-brand {
+        flex-direction: row;
+        justify-content: center;
+        width: calc(100% - 60px);
+    }
+
+    .right-header .cabinet-item {
+        order: 3;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .right-header .item-eye span,
+    .right-header .item-search span {
+        display: none;
+    }
+
+    .right-header .item-eye,
+    .right-header .item-search {
+    }
+
+    .main-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .main-menu > .navbar {
+        margin-top: 0;
+    }
+
+    .main-menu .navbar-collapse {
+        width: 100%;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #1a314b;
+    }
+
+    .first-level-link .angle-right-bottom,
+    .first-level-link .line {
+        display: inline;
+        bottom: 0;
+    }
+
+    .contacts-footer {
+        max-width: 162px;
+    }
+
+    .contacts-logo-footer {
+        max-width: 300px;
+    }
+
+    .message-block {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 991px) {
+    .logo-footer img {
+        max-width: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+
+}

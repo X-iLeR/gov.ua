@@ -1,0 +1,13 @@
+{
+  "name": "gov-ua",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "git@github.com:X-iLeR/gov.ua.git",
+  "author": "DeadLove",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

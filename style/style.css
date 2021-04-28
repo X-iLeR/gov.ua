@@ -110,7 +110,7 @@ svg {
     font-size: 20px;
     color: #fff;
     white-space: nowrap;
-    padding: 0 15px;
+    padding: 0 14px;
 }
 
 .main-menu .navbar-toggler {
@@ -171,13 +171,24 @@ svg {
     border: none;
     background-color: #1a314b;
     border-radius: 0 0 15px 15px;
-    margin: 0;
     padding: 12px 15px 28px;
+    width: calc(100% + 12px);
+    margin: 0 0 0 -6px;
 }
 
 .main-menu .dropdown-menu .nav-item {
     background-color: #1a314b;
     padding: 0 15px;
+}
+
+.main-menu .dropdown.submenu-open > div > ul > li:not(.submenu-open) {
+    display: none;
+}
+.dropdown.show > .dropdown-menu {
+    display: block;
+}
+.dropdown.show.submenu-open > .dropdown-menu {
+    background: transparent;
 }
 
 .main-menu .dropdown-menu .nav-link {

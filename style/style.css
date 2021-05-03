@@ -577,11 +577,11 @@ svg {
 }
 
 .wide-banner {
-    height: 160px;
     background-image: url(../img/wideBanner.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    margin: 40px 0;
+    margin: 40px 0 45px;
+    padding: 39px 0;
 }
 
 .wide-banner .text-xxl {
@@ -595,7 +595,7 @@ svg {
 .wide-banner .text-sm {
     font-size: 20px;
     line-height: normal;
-    color: #fff;
+    color: #b7fff9;
 }
 
 .tabs-type-service-block .heading {
@@ -605,8 +605,16 @@ svg {
     margin-bottom: 0;
 }
 
-.tabs-type-service-block .nav-item:not(:first-child) {
-    margin-left: 8px;
+.tabs-type-service-block .nav-item:first-child {
+    margin-right: 11px;
+}
+
+.tabs-type-service-block .nav-item:not(:first-child){
+    margin-right: 2px;
+}
+
+.tab-type-service-block{
+    margin-top: 40px;
 }
 
 .tabs-type-service-block .nav-link {
@@ -615,7 +623,7 @@ svg {
     color: #0d3a5f;
     font-size: 18px;
     line-height: normal;
-    padding: 0 8px;
+    padding: 3px 14px;
 }
 
 .tabs-type-service-block .nav-link.active {
@@ -624,29 +632,27 @@ svg {
     border-radius: 13px;
 }
 
-.service a {
+.service{
+    margin-bottom: 29px;
+}
+
+.service .service-item {
     width: 165px;
     height: 165px;
     border-radius: 100%;
-    border: 2px solid #cbd7e0;
+    border: 2px solid #eaedf0;
     position: relative;
+    padding: 20px;
     text-decoration: none;
+    margin-bottom: 40px;
 }
 
 /*.service > div:not(:nth-child(-n+6)) a {
     margin-top: 40px;
 }*/
-
-.service > div a {
-    margin-top: 40px;
-    margin-right: 30px;
-}
-.service > div:nth-child(6n) a{
-    margin-right: 0;
-}
 .service .icon {
     fill: #234161;
-    flex: 90px;
+    flex: 70px;
 }
 
 .service span {
@@ -712,8 +718,17 @@ svg {
     color: #ffe449;
 }
 
-.public-information-container .information-item:not(:first-child) {
-    margin-top: 16px;
+.public-information{
+    padding: 24px 0 30px;
+    background-color: #1c3a5a;
+}
+
+.heading.text-white{
+    margin-bottom: 16px;
+}
+
+.public-information-container .information-item{
+    margin-bottom: 19px;
 }
 
 .item-gallery {

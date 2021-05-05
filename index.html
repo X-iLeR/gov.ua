@@ -18,6 +18,13 @@
 
 <body>
 <header>
+    <div class="increase-font">
+        <div class="container-fluid container-xl">
+            <div class="close"></div>
+            <p class="font-plus"><span>А+ </span>збільшити шрифт</p>
+            <p class="font-minus"><span>А- </span>зменшити шрифт</p>
+        </div>
+    </div>
     <div class="gradient">
         <div class="container-fluid container-xl">
             <div class="row">
@@ -38,11 +45,11 @@
                 <div class="col-xl-1  d-xl-flex d-lg-none empty-header-block"></div>
                 <div class="col-xl-2 pt-4 right-header">
                     <nav class="navbar-brand d-flex">
-                        <div class="position-relative item cabinet-item">
-                            <ul class="nav nav-pills">
+                        <div class="item cabinet-item">
+                            <ul class="nav">
                                 <li class="nav-item dropdown">
                                     <a aria-expanded="false" aria-haspopup="true"
-                                       class="submenu-button d-flex"
+                                       class="submenu-button grid"
                                        data-toggle="dropdown" href="#" id="cabinetMenu"
                                        role="button">
                                         <span class="icon icon-user">
@@ -53,7 +60,7 @@
                                     <div aria-labelledby="cabinetMenu" class="dropdown-menu submenu menu-type-cabinet">
                                         <ul class="navbar-nav mr-auto cabinet-menu">
                                             <li class="nav-item heading-menu">
-                                                <div class="d-flex align-items-center">
+                                                <div class="grid">
                                                     <div class="icon icon-user">
                                                         <svg height="32px" viewBox="0 0 30 30"
                                                              width="32px"
@@ -71,7 +78,7 @@
                                                 </div>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link d-flex align-items-center" href="#">
+                                                <a class="nav-link grid" href="#">
                                                     <div class="icon icon-add">
                                                         <svg height="21px" id="Capa_1"
                                                              style="enable-background:new 0 0 512 512;"
@@ -96,7 +103,7 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link d-flex align-items-center" href="#">
+                                                <a class="nav-link grid" href="#">
                                                     <div class="icon icon-file">
                                                         <svg height="21px"
                                                              id="Capa_1" version="1.1"
@@ -138,7 +145,7 @@
                                         </ul>
                                         <ul class="navbar-nav mr-auto">
                                             <li class="nav-item">
-                                                <a class="nav-link d-flex align-items-center" href="#">
+                                                <a class="nav-link grid" href="#">
                                                     <div class="icon icon-user-type2">
                                                         <svg height="21px" id="Layer_1"
                                                              style="enable-background:new 0 0 440.248 440.248;"
@@ -157,7 +164,7 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link d-flex align-items-center" href="#">
+                                                <a class="nav-link grid" href="#">
                                                     <div class="icon icon-email">
                                                         <svg height="21px" id="Capa_1"
                                                              style="enable-background:new 0 0 512 512;"
@@ -177,7 +184,7 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link d-flex align-items-center" href="#">
+                                                <a class="nav-link grid" href="#">
                                                     <div class="icon icon-password">
                                                         <svg height="21px" id="Capa_1"
                                                              style="enable-background:new 0 0 512 512;"
@@ -203,7 +210,7 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link d-flex align-items-center" href="#">
+                                                <a class="nav-link grid" href="#">
                                                     <div class="icon icon-logout">
                                                         <svg height="21px" id="Layer_1"
                                                              style="enable-background:new 0 0 330 330;"
@@ -229,18 +236,18 @@
                             </ul>
                         </div>
                         <a class="item item-eye" href="#">
-                            <div class="d-flex">
+                            <div class="grid">
                                 <span class="icon icon-hide-type1">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style>.cls-1{fill:#224f91;}</style></defs><title>hide_1</title><g id="Layer_10" data-name="Layer 10"><path class="cls-1" d="M26.62,14.27A15,15,0,0,0,15.78,9a6,6,0,0,0-.64,0c-.19,0-.38,0-.56,0l-2,.21a12.59,12.59,0,0,0-1.93.46,19.58,19.58,0,0,0-1.88.72,12.71,12.71,0,0,0-1.78,1c-.44.31-1.3,1-1.72,1.31a12.64,12.64,0,0,0-1.6,1.6l-.52.64a4.73,4.73,0,0,0,1.2,1.58,16,16,0,0,1,1.42-1.58l.07-.07,1,3.55a15.07,15.07,0,0,0,2.43,1.34L7.52,13.4a13,13,0,0,1,1.77-1.08l2.19,8.18a14.56,14.56,0,0,0,2.17.39l-2.5-9.35a13,13,0,0,1,1.93-.45l2.63,9.82,2-.24a15,15,0,0,0,8.9-5.11A1,1,0,0,0,26.62,14.27Zm-7.48.64a4,4,0,0,1-2,3.45l-.41-1.52a2.47,2.47,0,0,0,.95-1.94,2.49,2.49,0,0,0-2.12-2.46l-.41-1.54h0A4,4,0,0,1,19.14,14.92Zm1.27,2.87a6,6,0,0,0,0-5.74,13,13,0,0,1,4.11,2.88A12.94,12.94,0,0,1,20.41,17.78Z"/></g></svg>
                                 </span>
-                                <span class="icon icon-hide-type2">
+                                <span class="icon icon-hide-type2 d-none">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style>.cls-1{fill:#224f91;}</style></defs><title>hide</title><g id="Layer_10" data-name="Layer 10"><path class="cls-1" d="M26.48,14.36A15,15,0,0,0,15.64,9,6,6,0,0,0,15,9c-.19,0-.38,0-.56,0L13.38,5.08l-1.93.52,1,3.65a12.59,12.59,0,0,0-1.93.46,19.58,19.58,0,0,0-1.88.72,12.71,12.71,0,0,0-1.78,1c-.44.31-1.3,1-1.72,1.31a12.64,12.64,0,0,0-1.6,1.6L3,15a4.73,4.73,0,0,0,1.2,1.58A16,16,0,0,1,5.63,15l.07-.07,1,3.55a15.07,15.07,0,0,0,2.43,1.34l-1.7-6.33a13,13,0,0,1,1.77-1.08l2.19,8.18a14.56,14.56,0,0,0,2.17.39L11,11.63a13,13,0,0,1,1.93-.45l3.68,13.74,1.93-.52-1-3.64a15,15,0,0,0,8.9-5.11A1,1,0,0,0,26.48,14.36ZM19,15a4,4,0,0,1-2,3.45l-.41-1.52A2.47,2.47,0,0,0,17.5,15a2.49,2.49,0,0,0-2.12-2.46L15,11h0A4,4,0,0,1,19,15Zm1.27,2.87a6,6,0,0,0,0-5.74A13,13,0,0,1,24.37,15,12.94,12.94,0,0,1,20.27,17.87Z"/></g></svg>
                                 </span>
                                 <span class="text-white name-item">Людям із порушенням зору</span>
                             </div>
                         </a>
                         <a class="item item-search" href="#">
-                            <div class="d-flex">
+                            <div class="grid">
                                 <span class="icon icon-search">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style>.cls-1{fill:#224f91;}</style></defs><title>search</title><g id="Layer_10" data-name="Layer 10"><path class="cls-1" d="M25,23.59l-4-4A9,9,0,1,0,19.61,21l4,4A1,1,0,0,0,25,23.59ZM14,21a7,7,0,1,1,7-7A7,7,0,0,1,14,21Z"/></g></svg>
                                 </span>
@@ -271,7 +278,7 @@
                                 </a>
                                 <div aria-labelledby="proMisto" class="dropdown-menu">
                                     <ul class="navbar-nav mr-auto menu-grid row">
-                                        <li class="nav-item dropdown-back back-first-level col-xl-3 col-lg-6">
+                                        <li class="nav-item dropdown-back back-first-level d-xl-none d-lg-flex d-none col-xl-3 col-lg-6">
                                             <a class="nav-link" href="#">
                                                 <span>
                                            Про місто
@@ -287,11 +294,11 @@
                                             <span>
                                            Відділ організації діяльності керівництва
                                         </span>
-                                                <span class="line"></span>
+                                                <span class="line more"></span>
                                             </a>
                                             <div aria-labelledby="proMisto2" class="dropdown-menu submenu">
                                                 <ul class="navbar-nav mr-auto menu-grid row">
-                                                    <li class="nav-item dropdown-back back-first-level col-xl-3  col-lg-6">
+                                                    <li class="nav-item dropdown-back back-first-level d-xl-none d-lg-flex d-none col-xl-3  col-lg-6">
                                                         <a class="nav-link" href="#">
                                                             <span>
                                            Про місто
@@ -326,11 +333,11 @@
                                             <span>
                                           Відділ організації діяльності керівництва
                                         </span>
-                                                <span class="line"></span>
+                                                <span class="line more"></span>
                                             </a>
                                             <div aria-labelledby="proMisto3" class="dropdown-menu submenu">
                                                 <ul class="navbar-nav mr-auto menu-grid row">
-                                                    <li class="nav-item dropdown-back back-first-level col-xl-3  col-lg-6">
+                                                    <li class="nav-item dropdown-back back-first-level d-xl-none d-lg-flex d-none col-xl-3  col-lg-6">
                                                         <a class="nav-link" href="#">
                                                             <span>
                                            Про місто
@@ -450,7 +457,7 @@
                                 </a>
                                 <div aria-labelledby="proMisto" class="dropdown-menu">
                                     <ul class="navbar-nav mr-auto menu-grid row">
-                                        <li class="nav-item dropdown-back back-first-level col-xl-3 col-lg-6">
+                                        <li class="nav-item dropdown-back back-first-level d-xl-none d-lg-flex d-none col-xl-3 col-lg-6">
                                             <a class="nav-link" href="#">
                                                 <span>
                                            Про місто
@@ -466,11 +473,11 @@
                                             <span>
                                            Відділ організації діяльності керівництва 1111
                                         </span>
-                                                <span class="line"></span>
+                                                <span class="line more"></span>
                                             </a>
                                             <div aria-labelledby="proMisto2" class="dropdown-menu submenu">
                                                 <ul class="navbar-nav mr-auto menu-grid row">
-                                                    <li class="nav-item dropdown-back back-first-level col-xl-3  col-lg-6">
+                                                    <li class="nav-item dropdown-back back-first-level d-xl-none d-lg-flex d-none col-xl-3  col-lg-6">
                                                         <a class="nav-link" href="#">
                                                             <span>
                                            Про місто
@@ -505,11 +512,11 @@
                                             <span>
                                           Відділ організації діяльності керівництва
                                         </span>
-                                                <span class="line"></span>
+                                                <span class="line more"></span>
                                             </a>
                                             <div aria-labelledby="proMisto3" class="dropdown-menu submenu">
                                                 <ul class="navbar-nav mr-auto menu-grid row">
-                                                    <li class="nav-item dropdown-back back-first-level col-xl-3  col-lg-6">
+                                                    <li class="nav-item dropdown-back back-first-level d-xl-none d-lg-flex d-none col-xl-3  col-lg-6">
                                                         <a class="nav-link" href="#">
                                                             <span>
                                            Про місто
@@ -825,7 +832,7 @@
                                             <li  class="nav-link">
                                                 <div class="moreBtn">
                                                     <span>Іще теми</span>
-                                                    <div class="icon open icon-arrow-type2">
+                                                    <div class="icon icon-arrow-type2">
                                                         <svg height="9px"
                                                              id="Capa_1"
                                                              style="enable-background:new 0 0 451.847 451.847;"
@@ -1198,13 +1205,13 @@
                                          xmlns="http://www.w3.org/2000/svg"><g><path
                                             d="m506 145-80-60c-2.597-1.947-5.755-3-9-3h-185v-5c0-8.284-6.716-15-15-15h-5v-47c0-8.284-6.716-15-15-15h-100c-8.284 0-15 6.716-15 15v47h-5c-8.284 0-15 6.716-15 15v5h-47c-8.284 0-15 6.716-15 15v100c0 8.284 6.716 15 15 15h47v5c0 8.284 6.716 15 15 15h5v190h-5c-24.813 0-45 20.187-45 45v30c0 8.284 6.716 15 15 15h200c8.284 0 15-6.716 15-15v-30c0-24.813-20.187-45-45-45h-5v-190h5c8.284 0 15-6.716 15-15v-5h210v69.204c0 1.878-.939 3.684-2.185 4.198-19.665 8.13-30.812 28.538-27.111 49.628 3.188 18.165 18.101 33.078 36.266 36.266 2.658.467 5.323.696 7.971.696 10.569 0 20.821-3.664 28.987-10.521 10.214-8.577 16.072-21.142 16.072-34.471 0-8.284-6.716-15-15-15s-15 6.716-15 15c0 4.443-1.955 8.634-5.365 11.498-3.456 2.902-7.886 4.058-12.479 3.25-5.867-1.03-10.873-6.036-11.902-11.904-1.461-8.319 3.654-14.498 9.023-16.718 12.588-5.204 20.723-17.734 20.723-31.922v-69.204h25c8.284 0 15-6.716 15-15v-40c0-4.721-2.223-9.167-6-12zm-476 37v-70h32v70zm82 152.066v-87.465l59.635 43.732zm70-14.132v87.465l-59.635-43.732zm-90-117.934v-110h110v110zm236.209-90h66.635l-22.212 55.53zm17.582 70h-97.581l48.79-60.988zm-80-70-33.791 42.238v-42.238zm-153.791-82h70v32h-70zm0 363.268 39.181 28.732h-39.181zm120 73.732v15h-170v-15c0-8.271 6.729-15 15-15h140c8.271 0 15 6.729 15 15zm-50-206.268-39.181-28.732h39.181zm300-78.732h-82.845l24.503-61.257 58.342 43.757z"/></g></svg>
                                 </span>
-                                <span class="d-flex">Будивництво</span>
+                                <span class="d-flex align-items-end">Будивництво</span>
                         </a>
                         <a href="#" class="service-item d-flex flex-column align-items-center">
                                 <span class="icon icon-goverment d-flex align-items-center">
  <svg height="58px" viewBox="0 -22 512 512" width="62px" xmlns="http://www.w3.org/2000/svg"><path
          d="m490.664062 437.335938v-217.667969h-74.664062v-64h-32.457031c-16.273438-48.832031-59.855469-85.285157-112.542969-91.164063v-34.503906h38.332031v-30h-68.332031v64.503906c-52.6875 5.878906-96.269531 42.332032-112.542969 91.164063h-32.457031v64h-74.667969v217.667969h-21.332031v30h512v-30zm-300.664062 0v-34h132v34zm-138.667969-187.667969h44.667969v187.667969h-44.667969zm204.667969-156.007813c42.480469 0 79.109375 25.507813 95.394531 62.003906h-190.789062c16.285156-36.496093 52.914062-62.003906 95.394531-62.003906zm-130 92.007813h260v34h-260zm196 187.667969h-132v-123.667969h132zm-196-123.667969h34v187.667969h-34zm226 0h34v187.667969h-34zm64 0h44.664062v187.667969h-44.664062zm0 0"/></svg>                               </span>
-                                <span class="d-flex">Місцеве самоврядування</span>
+                                <span class="d-flex align-items-end">Місцеве самоврядування</span>
                         </a>
                         <a href="#" class="service-item d-flex flex-column align-items-center">
                                 <span class="icon icon-tree d-flex align-items-center">
@@ -1213,7 +1220,7 @@
                                          width="50" xmlns="http://www.w3.org/2000/svg"><path
                                             d="m390.537 385.842c47.303 0 85.787-38.484 85.787-85.787 0-19.457-6.698-38.514-18.861-53.658-8.379-10.434-19.124-18.758-31.172-24.303 3.261-10.71 4.908-21.834 4.908-33.232 0-27.334-9.801-53.791-27.597-74.496-14.979-17.429-34.818-29.902-56.752-35.87-2.823-19.661-11.922-37.797-26.274-51.995-17.276-17.09-40.173-26.501-64.474-26.501s-47.199 9.411-64.474 26.5c-14.352 14.198-23.451 32.334-26.274 51.995-21.934 5.968-41.772 18.441-56.752 35.87-17.796 20.705-27.597 47.162-27.597 74.496 0 11.398 1.646 22.522 4.908 33.232-12.048 5.545-22.793 13.869-31.172 24.303-12.163 15.145-18.861 34.201-18.861 53.658 0 47.303 38.484 85.787 85.787 85.787h119.436v96.361h-123.716v30h277.43v-30h-123.715v-96.361h119.435zm-268.871-30c-30.761 0-55.787-25.026-55.787-55.787 0-26.031 17.68-48.357 42.994-54.295l18.042-4.231-7.898-16.765c-5.316-11.285-8.012-23.364-8.012-35.902 0-20.163 7.227-39.675 20.348-54.942 12.989-15.112 30.908-25.174 50.457-28.332l12.457-2.012.15-12.617c.4-33.613 28.072-60.959 61.685-60.959s61.284 27.346 61.684 60.958l.15 12.617 12.457 2.012c19.549 3.158 37.468 13.22 50.457 28.332 13.122 15.268 20.348 34.779 20.348 54.942 0 12.538-2.696 24.617-8.012 35.902l-7.898 16.765 18.042 4.231c25.314 5.938 42.994 28.264 42.994 54.295 0 30.761-25.026 55.787-55.787 55.787h-119.435v-83.429l54.938-54.938-21.213-21.213-33.726 33.725v-99.405h-30v45.299l-33.726-33.725-21.213 21.213 54.938 54.938v65.785l-33.726-33.726-21.213 21.213 54.938 54.938v29.323h-119.433z"/></svg>
                                 </span>
-                                <span class="d-flex">Екологія</span>
+                                <span class="d-flex align-items-end">Екологія</span>
                         </a>
                             <a class="d-flex flex-column align-items-center service-item" href="#">
                                 <span class="icon icon-diagram d-flex align-items-center">
@@ -1222,7 +1229,7 @@
                                             d="m496.316406 173.382812c-8.179687-48.414062-33.335937-92.535156-70.835937-124.230468-37.5-31.699219-85.191407-49.152344-134.292969-49.152344-8.273438 0-14.980469 6.707031-14.980469 14.980469v193.054687c0 4.410156 1.941407 8.59375 5.308594 11.441406 2.726563 2.300782 6.15625 3.539063 9.671875 3.539063.832031 0 1.664062-.070313 2.496094-.210937l190.355468-32.15625c3.917969-.660157 7.414063-2.851563 9.714844-6.089844 2.300782-3.238282 3.222656-7.261719 2.5625-11.175782zm-190.148437 16.929688v-159.730469c75.628906 6.265625 138.722656 59.59375 157.5 133.121094zm0 0"/><path
                                             d="m463.136719 255.933594c-.898438-8.574219-5.371094-16.449219-12.265625-21.601563-6.871094-5.132812-15.644532-7.179687-24.078125-5.621093v.003906l-179.476563 33.234375v-182.113281c0-8.585938-3.617187-16.851563-9.921875-22.683594-6.289062-5.820313-14.796875-8.78125-23.332031-8.109375-58.011719 4.527343-111.851562 30.574219-151.59375 73.347656-39.964844 43.003906-61.96875 99.039063-61.96875 157.777344 0 61.902343 24.101562 120.109375 67.796875 163.824219.117187.117187.234375.234374.355469.351562 43.757812 43.628906 101.886718 67.65625 163.679687 67.65625.480469 0 .949219-.023438 1.417969-.066406 61.449219-.328125 119.167969-24.40625 162.660156-67.898438.339844-.339844.65625-.691406.957032-1.050781 29.410156-29.734375 50.222656-66.769531 60.214843-107.175781l.285157-1.171875c1.140624-4.71875 2.128906-9.40625 2.929687-13.914063 3.820313-21.359375 4.605469-43.15625 2.339844-64.789062zm-246.746094-177.019532c.023437 0 .054687-.003906.09375-.003906.132813 0 .339844.03125.5625.238282.304687.28125.304687.578124.304687.6875v193.914062l-39.410156 39.414062-98.660156 98.65625c-31.589844-36.609374-48.820312-82.804687-48.820312-131.652343 0-104.71875 81.671874-193.117188 185.929687-201.253907zm16.09375 403.058594c-.046875 0-.085937.003906-.152344 0-.441406 0-.882812.019532-1.316406.0625-48.453125-.308594-94.253906-17.59375-130.558594-49.011718l131.875-131.878907 131.914063 131.914063c-36.628906 31.652344-82.863282 48.914062-131.761719 48.914062zm198.8125-166.507812c-.695313 3.925781-1.554687 8.007812-2.546875 12.109375l-.246094 1.011719c-7.605468 30.753906-22.40625 59.257812-43.113281 83.242187l-84.332031-84.328125-37.996094-37.996094 169.183594-31.328125c.113281-.023437.382812-.070312.691406.160157.351562.265624.386719.609374.398438.722656 1.976562 18.832031 1.292968 37.800781-2.039063 56.40625zm0 0"/></svg>
                                 </span>
-                                <span class="d-flex">Економіка</span>
+                                <span class="d-flex align-items-end">Економіка</span>
                             </a>
                             <a class="d-flex flex-column align-items-center service-item" href="#">
                                 <span class="icon icon-park d-flex align-items-center">
@@ -1234,7 +1241,7 @@
                                             d="m436 196h-172.5l-40.5-54c-2.436-3.248-6.083-5.369-10.111-5.88-4.029-.511-8.09.631-11.26 3.167l-23.094 18.475-30.055-45.082c-2.781-4.174-7.465-6.68-12.48-6.68s-9.699 2.506-12.481 6.679l-60 90c-3.068 4.603-3.354 10.521-.744 15.398s7.693 7.923 13.225 7.923h360c8.284 0 15-6.716 15-15s-6.716-15-15-15zm-331.972 0 31.972-47.958 31.972 47.958zm100 0-8.788-13.182 13.046-10.437 17.714 23.619z"/><path
                                             d="m256 316h-26.459c-14.971 0-28.43-8.318-35.125-21.708-11.809-23.619-35.55-38.292-61.957-38.292h-56.459c-8.284 0-15 6.716-15 15s6.716 15 15 15h56.459c14.971 0 28.43 8.318 35.125 21.708 11.81 23.619 35.55 38.292 61.958 38.292h26.458c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/></g></svg>
                                 </span>
-                                <span class="d-flex">Земля</span>
+                                <span class="d-flex align-items-end">Земля</span>
                             </a>
                             <a class="d-flex flex-column align-items-center service-item" href="#">
                                 <span class="icon icon-sport-field d-flex align-items-center">
@@ -1249,7 +1256,7 @@
 </g>
 </svg>
                                 </span>
-                                <span class="d-flex">Молодь та спорт</span>
+                                <span class="d-flex align-items-end">Молодь та спорт</span>
                             </a>
                             <a class="d-flex flex-column align-items-center service-item" href="#">
                                 <span class="icon icon-education d-flex align-items-center">
@@ -1279,7 +1286,7 @@
 
 </svg>
                                 </span>
-                                <span class="d-flex">Освіта та культура</span>
+                                <span class="d-flex align-items-end">Освіта та культура</span>
                             </a>
                             <a class="d-flex flex-column align-items-center service-item" href="#">
                                 <span class="icon icon-ambulance d-flex align-items-center">
@@ -1295,7 +1302,7 @@
                                             d="m255.142 76.578c8.284 0 15-6.716 15-15v-18.117c0-8.284-6.716-15-15-15s-15 6.716-15 15v18.117c0 8.284 6.715 15 15 15z"/><path
                                             d="m239.932 226.529c-8.284 0-15 6.716-15 15v29.22c0 8.284 6.716 15 15 15s15-6.716 15-15v-29.22c0-8.284-6.716-15-15-15z"/></g></svg>
                                 </span>
-                                <span class="d-flex">Охорона здоровья</span>
+                                <span class="d-flex align-items-end">Охорона здоровья</span>
                             </a>
                             <a class="d-flex flex-column align-items-center service-item" href="#">
                                 <span class="icon icon-femily d-flex align-items-center">
@@ -1303,7 +1310,7 @@
                                          width="54" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                                          y="0px"><g><g><path d="M293.211,0.013c-14.488-0.001-27.235,5.893-37.21,17.123c-9.977-11.23-22.722-17.124-37.21-17.124 c-29.837,0-53.209,24.331-53.209,55.391c0,32.169,24.994,53.121,59.586,82.117c6.706,5.621,13.639,11.434,21.009,17.82 c2.819,2.443,6.321,3.665,9.824,3.665c3.502,0,7.005-1.222,9.824-3.665c6.71-5.816,13.04-11.158,19.162-16.325 c35.126-29.647,61.433-51.771,61.433-83.611C346.42,24.344,323.048,0.013,293.211,0.013z M265.637,116.089 c-3.15,2.659-6.354,5.363-9.645,8.161c-3.956-3.352-7.79-6.566-11.553-9.721c-32.106-26.913-48.859-41.765-48.859-59.127 c0-14.239,10.196-25.393,23.21-25.393c16.106,0,22.334,19.85,22.766,21.295c1.744,6.573,7.641,11.151,14.444,11.151 c6.804,0,12.7-4.579,14.444-11.151c0.431-1.445,6.659-21.295,22.766-21.295c13.014,0.001,23.21,11.154,23.21,25.394 C316.421,72.839,297.204,89.449,265.637,116.089z"/></g></g><g><g><path d="M507.449,151.586c14.176-38.948-5.869-81.947-44.823-96.125c-38.859-14.143-81.98,5.964-96.124,44.823 c-7.3,20.056-5.801,41.833,4.213,60.779c-56.151,3.826-100.628,44.432-112.226,93.016l-0.47,1.972 c-2.049-0.068-1.967-0.069-4.039,0c-12.802-53.675-59.052-91.332-112.696-94.987c10.014-18.941,11.515-40.722,4.214-60.78 c-14.143-38.859-57.263-58.967-96.124-44.823C10.427,69.637-9.627,112.631,4.551,151.585c7.563,20.777,23.41,36.187,42.458,43.874 C7.923,233.356-1.466,291.634,21.314,338.943l78.734,164.521c2.493,5.209,7.755,8.525,13.529,8.525c27.409,0,256.042,0,284.844,0 c5.775,0,11.037-3.315,13.529-8.525l78.719-164.489c22.937-47.637,13.172-105.847-25.681-143.517 C484.039,187.771,499.888,172.361,507.449,151.586z M256.001,285.999c16.541,0,29.999,13.457,29.999,29.999 s-13.457,29.999-29.999,29.999s-29.999-13.457-29.999-29.999S239.459,285.999,256.001,285.999z M32.741,141.325 c-8.506-23.37,3.522-49.167,26.895-57.674c23.463-8.54,49.201,3.615,57.674,26.895c8.506,23.37-3.522,49.167-26.895,57.674 C67.047,176.726,41.248,164.697,32.741,141.325z M123.028,481.991l-74.67-156.029c-24.079-50.008,0.466-110.681,52.317-129.553 c52.094-18.96,110.004,11.313,123.681,64.741l0.811,3.403c-14.665,8.823-25.257,23.736-28.274,41.213l-34.927-25.791 c-19.823-14.844-48.048-10.808-62.952,9.02c-14.76,19.674-11.099,47.947,8.967,62.979l81.679,61.497l17.13,68.52H123.028z M294.524,401.043l-20.236,80.947h-36.575l-20.237-80.947c-0.833-3.333-2.786-6.279-5.53-8.345l-85.949-64.712 c-6.639-4.973-7.951-14.371-2.995-20.978c4.976-6.619,14.395-7.968,20.999-3.009c0.032,0.024,0.064,0.048,0.096,0.072 l62.847,46.407c10.87,15.417,28.8,25.517,49.055,25.517s38.185-10.1,49.055-25.517l62.925-46.465 c6.628-4.959,16.054-3.62,21.01,2.984c4.965,6.618,3.665,16.007-3.015,21.011l-85.92,64.69 C297.31,394.764,295.358,397.71,294.524,401.043z M463.627,325.994L388.973,481.99H305.21l17.13-68.52l81.65-61.475 c19.905-14.912,23.927-43.1,8.994-63.003c-14.873-19.817-43.127-23.853-62.901-9.054l-34.976,25.827 c-3.018-17.477-13.608-32.391-28.274-41.212l0.811-3.403c13.694-53.496,71.654-83.676,123.682-64.741 C463.236,215.302,487.697,276.002,463.627,325.994z M479.261,141.325c-8.507,23.37-34.302,35.4-57.674,26.895 c-23.37-8.507-35.4-34.302-26.895-57.674c8.507-23.37,34.301-35.4,57.674-26.895C475.736,92.157,487.767,117.952,479.261,141.325z "/></svg>
                                 </span>
-                                <span class="d-flex">Соціальний захист</span>
+                                <span class="d-flex align-items-end">Соціальний захист</span>
                             </a>
                             <a class="d-flex flex-column align-items-center service-item" href="#">
                                 <span class="icon d-flex icon-bus align-items-center">
@@ -1311,7 +1318,7 @@
                                          xmlns="http://www.w3.org/2000/svg"><path
                                             d="m458.707031 24.875c-7.671875-15.34375-23.09375-24.875-40.246093-24.875h-373.460938c-24.8125 0-45 20.1875-45 45v240c0 24.8125 20.1875 45 45 45h17.578125c6.195313 17.460938 22.867187 30 42.421875 30s36.226562-12.539062 42.421875-30h217.15625c6.195313 17.460938 22.867187 30 42.421875 30s36.226562-12.539062 42.421875-30h17.578125c24.8125 0 45-20.1875 45-45v-150c0-2.328125-.542969-4.625-1.585938-6.707031zm-126.707031 125.125v-60h60v60zm-122 0v-60h92v60zm92 30v120h-92v-120zm-272-30v-60h60v60zm90-60h60v60h-60zm302 0h35.730469l24.269531 48.539062v11.460938h-60zm-377-60h373.460938c5.714843 0 10.855468 3.175781 13.414062 8.292969l10.855469 21.707031h-412.730469v-15c0-8.269531 6.730469-15 15-15zm-15 255v-105h150v120h-32.578125c-6.195313-17.460938-22.867187-30-42.421875-30s-36.226562 12.539062-42.421875 30h-17.578125c-8.269531 0-15-6.730469-15-15zm75 45c-8.269531 0-15-6.730469-15-15s6.730469-15 15-15 15 6.730469 15 15-6.730469 15-15 15zm302 0c-8.269531 0-15-6.730469-15-15s6.730469-15 15-15 15 6.730469 15 15-6.730469 15-15 15zm60-30h-17.578125c-6.195313-17.460938-22.867187-30-42.421875-30s-36.226562 12.539062-42.421875 30h-32.578125v-120h150v60h-15c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h15v15c0 8.269531-6.730469 15-15 15zm0 0"/></svg>
                                 </span>
-                                <span class="d-flex">Транспорт</span>
+                                <span class="d-flex align-items-end">Транспорт</span>
                             </a>
                             <a class="d-flex flex-column align-items-center service-item" href="#">
                                 <span class="icon d-flex icon-money align-items-center">
@@ -1323,7 +1330,7 @@
                                             d="m329.967 226.212h29.997c8.283 0 14.999-6.716 14.999-15s-6.715-15-14.999-15h-29.997c-8.283 0-14.999 6.716-14.999 15s6.716 15 14.999 15z"/><path
                                             d="m497.001 331.288c8.283 0 14.999-6.716 14.999-15v-60.05c0-8.284-6.715-15-14.999-15h-47.046v-165.526c0-8.284-6.715-15-14.999-15h-419.957c-8.284 0-14.999 6.716-14.999 15v271c0 8.284 6.715 15 14.999 15h286.921v14.575c0 8.284 6.715 15 14.999 15h14.999v45c0 8.284 6.715 15 14.999 15h150.086c8.283 0 14.999-6.716 14.999-15v-60.05c0-8.284-6.715-15-14.999-15h-14.999v-29.95h14.997zm-14.998-30c-27.664-.095-70.602-.03-120.089-.05v-30h120.089zm-62.045-167.474c-21.051-5.439-37.659-22.048-43.097-43.101h43.097zm-346.864-43.102c-5.438 21.053-22.046 37.663-43.097 43.101v-43.101zm-43.097 197.899c21.051 5.439 37.659 22.048 43.097 43.101h-43.097zm73.736 43.101c-6.34-37.631-36.109-67.403-73.736-73.743v-93.514c37.627-6.34 67.396-36.112 73.736-73.743h242.49c6.34 37.631 36.109 67.403 73.736 73.743v76.782h-73.043c-8.283 0-14.999 6.716-14.999 15v45h-14.999c-8.283 0-14.999 6.716-14.999 15v15.475zm378.27 89.576h-120.089v-30c7.007-.003 87.984-.037 120.089-.05zm-29.997-60.051c-7.029.003-87.981.037-120.089.05v-30.05c12.313.005 101.833.043 120.089.05z"/></g></svg>
                                 </span>
-                                <span class="d-flex">Фінанси</span>
+                                <span class="d-flex align-items-end">Фінанси</span>
                             </a>
                             <a class="d-flex flex-column align-items-center service-item" href="#">
                                 <span class="icon icon-arrow-type5 d-flex align-items-center">
@@ -1336,7 +1343,7 @@
 </g>
 </svg>
                                 </span>
-                                <span class="d-flex">Портал відкритих даних</span>
+                                <span class="d-flex align-items-end">Портал відкритих даних</span>
                             </a>
                     </div>
                 </div>
@@ -1352,10 +1359,10 @@
 <div class="public-information">
     <div class="container-fluid container-lg public-information-container">
         <div class="row">
-            <div class="col-sm-6 public-information-video">
+            <div class="col-sm-6 public-information-video d-flex justify-content-center">
                 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen frameborder="0"
-                        height="100%" src="https://www.youtube.com/embed/vmZcmcn2xE4"
+                        height="auto" src="https://www.youtube.com/embed/vmZcmcn2xE4"
                         title="YouTube video player"
                         width="100%"></iframe>
             </div>
@@ -1363,14 +1370,10 @@
                 <p class="heading text-white">Публічна інформація</p>
                 <a class="information-item d-flex flex-column" href="#">
                     <span class="icon icon-link">
-                        <svg height="19px" viewBox="0 0 30 30" width="21px" xmlns="http://www.w3.org/2000/svg"><title>external-link</title><g
-                                data-name="Layer 10" id="Layer_10"><path class="cls-1"
-                                                                         d="M21.1,7H15V9h4.59l-6.29,6.29,1.41,1.41L21,10.41V15h2V9A2,2,0,0,0,21.1,7Z"/><path
-                                class="cls-2"
-                                d="M21,19a2,2,0,0,1-2,2H11a2,2,0,0,1-2-2V11a2,2,0,0,1,2-2h2V7H11a4,4,0,0,0-4,4v8a4,4,0,0,0,4,4h8a4,4,0,0,0,4-4V17H21Z"/></g></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style>.cls-1,.cls-2{fill:#224f91;}.cls-2{opacity:0.6;}</style></defs><title>external-link</title><g id="Layer_10" data-name="Layer 10"><path class="cls-1" d="M21.1,7H15V9h4.59l-6.29,6.29,1.41,1.41L21,10.41V15h2V9A2,2,0,0,0,21.1,7Z"/><path class="cls-2" d="M21,19a2,2,0,0,1-2,2H11a2,2,0,0,1-2-2V11a2,2,0,0,1,2-2h2V7H11a4,4,0,0,0-4,4v8a4,4,0,0,0,4,4h8a4,4,0,0,0,4-4V17H21Z"/></g></svg>
                     </span>
                     <span class="name">LXVІ сесія - пленарне засідання від 23.09.2020</span>
-                    <div>
+                    <div class="d-flex align-items-center">
     <span class="label">
                         Рішення міської ради
                     </span>
@@ -1379,14 +1382,10 @@
                 </a>
                 <a class="information-item d-flex flex-column" href="#">
                     <span class="icon icon-link">
-                        <svg height="19px" viewBox="0 0 30 30" width="21px" xmlns="http://www.w3.org/2000/svg"><title>external-link</title><g
-                                data-name="Layer 10" id="Layer_10"><path class="cls-1"
-                                                                         d="M21.1,7H15V9h4.59l-6.29,6.29,1.41,1.41L21,10.41V15h2V9A2,2,0,0,0,21.1,7Z"/><path
-                                class="cls-2"
-                                d="M21,19a2,2,0,0,1-2,2H11a2,2,0,0,1-2-2V11a2,2,0,0,1,2-2h2V7H11a4,4,0,0,0-4,4v8a4,4,0,0,0,4,4h8a4,4,0,0,0,4-4V17H21Z"/></g></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style>.cls-1,.cls-2{fill:#224f91;}.cls-2{opacity:0.6;}</style></defs><title>external-link</title><g id="Layer_10" data-name="Layer 10"><path class="cls-1" d="M21.1,7H15V9h4.59l-6.29,6.29,1.41,1.41L21,10.41V15h2V9A2,2,0,0,0,21.1,7Z"/><path class="cls-2" d="M21,19a2,2,0,0,1-2,2H11a2,2,0,0,1-2-2V11a2,2,0,0,1,2-2h2V7H11a4,4,0,0,0-4,4v8a4,4,0,0,0,4,4h8a4,4,0,0,0,4-4V17H21Z"/></g></svg>
                     </span>
                     <span class="name">LXVІ сесія - пленарне засідання від 23.09.2020</span>
-                    <div>
+                    <div class="d-flex align-items-center">
     <span class="label">
                         Рішення міської ради
                     </span>
@@ -1395,14 +1394,10 @@
                 </a>
                 <a class="information-item d-flex flex-column" href="#">
                     <span class="icon icon-link">
-                        <svg height="19px" viewBox="0 0 30 30" width="21px" xmlns="http://www.w3.org/2000/svg"><title>external-link</title><g
-                                data-name="Layer 10" id="Layer_10"><path class="cls-1"
-                                                                         d="M21.1,7H15V9h4.59l-6.29,6.29,1.41,1.41L21,10.41V15h2V9A2,2,0,0,0,21.1,7Z"/><path
-                                class="cls-2"
-                                d="M21,19a2,2,0,0,1-2,2H11a2,2,0,0,1-2-2V11a2,2,0,0,1,2-2h2V7H11a4,4,0,0,0-4,4v8a4,4,0,0,0,4,4h8a4,4,0,0,0,4-4V17H21Z"/></g></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style>.cls-1,.cls-2{fill:#224f91;}.cls-2{opacity:0.6;}</style></defs><title>external-link</title><g id="Layer_10" data-name="Layer 10"><path class="cls-1" d="M21.1,7H15V9h4.59l-6.29,6.29,1.41,1.41L21,10.41V15h2V9A2,2,0,0,0,21.1,7Z"/><path class="cls-2" d="M21,19a2,2,0,0,1-2,2H11a2,2,0,0,1-2-2V11a2,2,0,0,1,2-2h2V7H11a4,4,0,0,0-4,4v8a4,4,0,0,0,4,4h8a4,4,0,0,0,4-4V17H21Z"/></g></svg>
                     </span>
                     <span class="name">LXVІ сесія - пленарне засідання від 23.09.2020</span>
-                    <div>
+                    <div class="d-flex align-items-center">
     <span class="label">
                         Рішення міської ради
                     </span>
@@ -1416,11 +1411,11 @@
 <div class="container-fluid container gallery-container">
     <div class="row">
         <a class="col-xl-3 col-md-4 col-sm-6 item-gallery" href="#">
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column position-relative overflow-hidden">
                 <div class="icon d-flex">
                     <span class="ellipse"></span>
                     <span class="illustration icon-photo">
-                    <svg height="34px" id="Capa_1" version="1.1"
+                    <svg height="40" id="Capa_1" version="1.1"
                          viewBox="0 0 273.715 273.715" width="40px" x="0px" xml:space="preserve"
                          xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
@@ -1432,7 +1427,7 @@
 </svg>
                 </span>
                 </div>
-                <span class="image"><img src="img/news.jpg"></span>
+                <span class="image d-flex overflow-hidden justify-content-center align-items-center"><img src="img/news.jpg"></span>
                 <div class="header-item">
                     <span>VR-контент</span>
                 </div>
@@ -1442,12 +1437,12 @@
             </div>
         </a>
         <a class="col-xl-3 col-md-4 col-sm-6 item-gallery" href="#">
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column position-relative overflow-hidden">
                 <div class="icon d-flex">
                     <span class="ellipse"></span>
                     <span class="illustration icon-video-camera">
-<svg enable-background="new 0 0 512 512" height="42" id="Capa_1" viewBox="0 0 512 512"
-     width="41" xmlns="http://www.w3.org/2000/svg"><g><path
+<svg enable-background="new 0 0 512 512" height="44" id="Capa_1" viewBox="0 0 512 512"
+     width="44" xmlns="http://www.w3.org/2000/svg"><g><path
         d="m489.357 92.778-64.021 37.907h-40.892v-10.161c0-22.1-17.98-40.079-40.08-40.079h-189.668v-6.107c0-24.448 19.89-44.338 44.338-44.338h137.454c8.284 0 15-6.716 15-15s-6.716-15-15-15h-137.454c-40.99 0-74.338 33.347-74.338 74.337v6.107h-24.616c-18.62 0-34.313 12.763-38.795 30h-46.285c-8.284 0-15 6.716-15 15v69.963c0 8.284 6.716 15 15 15h45v67.878c0 22.1 17.98 40.08 40.08 40.08h97.743l-86.95 171.86c-3.74 7.392-.779 16.416 6.613 20.156 7.399 3.743 16.42.772 20.156-6.613l69.58-137.528v130.756c0 8.284 6.716 15 15 15s15-6.716 15-15v-130.756l69.58 137.528c3.742 7.395 12.767 10.352 20.156 6.613 7.392-3.74 10.353-12.764 6.613-20.156l-86.95-171.86h97.743c22.1 0 40.08-17.98 40.08-40.08v-10.161h40.892l64.021 37.907c9.948 5.889 22.643-1.251 22.643-12.907v-187.44c0-11.6-12.653-18.82-22.643-12.906zm-459.357 87.629v-39.963h30v39.963zm324.444 97.878c0 5.558-4.522 10.08-10.08 10.08h-244.284c-5.558 0-10.08-4.522-10.08-10.08 0-30.133 0-124.971 0-157.762 0-5.558 4.522-10.08 10.08-10.08h244.284c5.558 0 10.08 4.521 10.08 10.08zm30-117.601h30v77.44h-30zm97.556 106.127-37.556-22.237v-90.339l37.556-22.236z"/><path
         d="m244.976 140.444h-110.391c-8.284 0-15 6.716-15 15v87.922c0 8.284 6.716 15 15 15h110.391c8.284 0 15-6.716 15-15v-87.922c0-8.284-6.716-15-15-15zm-15 87.922h-80.391v-57.922h80.391z"/><circle
         cx="309.444" cy="155.444" r="15"/><circle cx="309.444" cy="215.443" r="15"/></g></svg>
@@ -1463,7 +1458,7 @@
             </div>
         </a>
         <a class="col-xl-3 col-md-4 col-sm-6 item-gallery" href="#">
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column position-relative overflow-hidden">
                 <div class="icon d-flex">
                     <span class="ellipse"></span>
                     <span class="illustration icon-round">
@@ -1482,11 +1477,11 @@
             </div>
         </a>
         <a class="col-xl-3 col-md-4 col-sm-6 item-gallery" href="#">
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column position-relative overflow-hidden">
                 <div class="icon d-flex">
                     <span class="ellipse"></span>
                     <span class="illustration icon-round-video-playe">
-<svg height="37" id="Capa_1" version="1.1" viewBox="0 0 512 512" width="40"
+<svg height="40" id="Capa_1" version="1.1" viewBox="0 0 512 512" width="40"
      x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
 <g>
 	<g>
@@ -1526,11 +1521,11 @@
             </div>
         </a>
         <a class="col-xl-3 col-md-4 col-sm-6 item-gallery" href="#">
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column position-relative overflow-hidden">
                 <div class="icon d-flex">
                     <span class="ellipse"></span>
                     <span class="illustration icon-ar-glasses">
-<svg height="26" id="Capa_1" version="1.1" viewBox="0 0 512 512" width="40"
+<svg height="40" id="Capa_1" version="1.1" viewBox="0 0 512 512" width="40"
      x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
 <g>
 	<g>
@@ -1560,11 +1555,11 @@
             </div>
         </a>
         <a class="col-xl-3 col-md-4 col-sm-6 item-gallery" href="#">
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column position-relative overflow-hidden">
                 <div class="icon d-flex">
                     <span class="ellipse"></span>
-                    <span class="illustration icon-video-camera">
-<svg height="26" id="Capa_1" version="1.1" viewBox="0 0 512 512" width="40"
+                    <span class="illustration icon-ar-glasses">
+<svg height="40" id="Capa_1" version="1.1" viewBox="0 0 512 512" width="40"
      x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
 <g>
 	<g>
@@ -1635,13 +1630,15 @@
         </a>
     </div>
 </div>
+<div class="container-fluid container">
+    <div class="divider-blue"></div>
+</div>
 <footer>
     <div class="container-fluid container">
-        <div class="divider-blue"></div>
         <div>
-            <a class="d-flex align-items-center" href="#">
+            <a class="d-inline-flex align-items-center text-decoration-none heading-content" href="#">
                 <p class="heading">Мапа порталу</p>
-                <span class="icon icon-sitemaps">
+                <span class="icon icon-sitemaps d-inline-flex align-items-center">
                     <svg height="19" id="Capa_1" version="1.1"
                          viewBox="0 0 360.536 360.536" width="19" x="0px" xml:space="preserve"
                          xmlns="http://www.w3.org/2000/svg"
@@ -1655,32 +1652,34 @@
                     <img src="img/kr_footer.png">
                 </div>
                 <div class="col-xl-5 d-flex flex-column contacts-logo-footer">
-                    <span class="name">Виконавчий комітет Криворізької міської ради</span>
-                    <span class="description">50101, Україна, Дніпропетровська обл., м.Кривий Ріг, пл. Молодіжна 1</span>
+                    <div class="d-inline-flex flex-column">
+                        <span class="name d-flex">Виконавчий комітет Криворізької міської ради</span>
+                        <span class="description d-flex">50101, Україна, Дніпропетровська обл., м.Кривий Ріг, пл. Молодіжна 1</span>
+                    </div>
                 </div>
                 <div class="col-xl-2 d-flex flex-column contacts-footer">
                     <span class="name">Телефони</span>
-                    <a class="description" href="tel:0442814934">(044) 281 49 34,</a>
-                    <a class="description" href="tel:0442814918">(044) 281 49 18 (факс)</a>
+                    <a class="description text-decoration-none" href="tel:0442814934">(044) 281 49 34,</a>
+                    <a class="description text-decoration-none" href="tel:0442814918">(044) 281 49 18 (факс)</a>
                 </div>
                 <div class="col-xl-2 d-flex flex-column contacts-footer">
                     <span class="name">Гаряча лінія</span>
-                    <a class="description" href="mailto:rada.kryvyirih@kr.gov.ua">rada.kryvyirih@kr.gov.ua</a>
+                    <a class="description text-decoration-none" href="mailto:rada.kryvyirih@kr.gov.ua">rada.kryvyirih@kr.gov.ua</a>
                 </div>
                 <div class="col-xl-2 d-flex flex-column contacts-footer">
                     <span class="name">Електронна пошта</span>
-                    <a class="description" href="mailto:rada.kryvyirih@kr.gov.ua">rada.kryvyirih@kr.gov.ua</a>
+                    <a class="description text-decoration-none" href="mailto:rada.kryvyirih@kr.gov.ua">rada.kryvyirih@kr.gov.ua</a>
                 </div>
 
             </div>
         </div>
         <div class="divider-grey"></div>
         <div class="row">
-            <div class="col-lg-5 col-sm-6">
-                <div class="d-flex align-items-center">
+            <div class="col-lg-6 col-sm-6">
+                <div class="d-flex align-items-center mb-36">
                     <div class="icon-trezub d-flex align-items-center justify-content-center">
                         <svg height="44" id="svg7657"
-                             version="1.1" viewBox="0 0 330 460" width="27"
+                             version="1.1" viewBox="0 0 330 460" width="68"
                              x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
 
@@ -1694,7 +1693,7 @@
                 </div>
                 <div class="d-flex align-items-center">
                     <div class="icon-creative-commons d-flex align-items-center justify-content-center">
-                        <svg data-name="Layer 5" height="66" id="Layer_5" viewBox="0 0 30 30" width="66"
+                        <svg data-name="Layer 5" height="82" id="Layer_5" viewBox="0 0 30 30" width="82"
                              xmlns="http://www.w3.org/2000/svg"><title>creative-commons</title>
                             <path class="cls-1"
                                   d="M15,3A12,12,0,1,0,27,15,12,12,0,0,0,15,3Zm0,22A10,10,0,1,1,25,15,10,10,0,0,1,15,25Z"/>
@@ -1711,7 +1710,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-5 col-lg-3 col-sm-6 flex-column d-flex justify-content-xl-center justify-content-lg-start">
+            <div class="col-xl-4 col-lg-3 col-sm-6 flex-column d-flex">
                 <a class="application-link" href="#">
                     <img src="img/google_play.jpg">
                 </a>
@@ -1722,9 +1721,9 @@
             <div class="col-xl-2 col-lg-4 d-flex flex-column  align-items-lg-center">
                 <div class="row flex-lg-column flex-sm-wrap flex-column">
                     <div class="about-links">
-                        <a class="d-flex" href="#">
+                        <a class="d-flex align-items-center link" href="#">
                             <div class="icon icon-youtube">
-                                <svg height="18" viewBox="0 0 30 30" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <svg height="29px" viewBox="0 0 30 30" width="29px" xmlns="http://www.w3.org/2000/svg">
                                     <title>youtube</title>
                                     <g data-name="Layer 10" id="Layer_10">
                                         <path class="cls-1"
@@ -1737,9 +1736,9 @@
                             Youtube-канал
                         </span>
                         </a>
-                        <a class="d-flex" href="#">
+                        <a class="d-flex align-items-center link" href="#">
                             <div class="icon icon-facebook">
-                                <svg height="24" viewBox="0 0 30 30" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <svg height="42" viewBox="0 0 30 30" width="39" xmlns="http://www.w3.org/2000/svg">
                                     <title>facebook</title>
                                     <g data-name="Layer 10" id="Layer_10">
                                         <path class="cls-1"
@@ -1753,8 +1752,8 @@
                             Facebook
                         </span>
                         </a>
-                        <a class="d-flex" href="#">
-                            <div class="icon icon-instagram">
+                        <a class="d-flex align-items-center link" href="#">
+                            <div class="icon icon-instagram d-inline-flex align-items-center">
                                 <svg height="24" viewBox="0 0 511 511.9" width="24" xmlns="http://www.w3.org/2000/svg">
                                     <path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/>
                                     <path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/>

@@ -6,12 +6,42 @@ $(document).ready(function () {
         switchListItem($('.listWithMore'));
     });
 
-    $('.slider-links').slick({
-        dots: false,
-        infinite: true,
-        centerMode: true,
-        slidesToShow: 5,
-        slidesToScroll: 3
+    $('.slider-links.slider').slick({
+        autoplay:       true,
+        autoplaySpeed:  4500,
+        infinite:       true,
+        pauseOnFocus:   false,
+        pauseOnHover:   false,
+        slidesToShow:   6,
+        slidesToScroll: 5
+    });
+
+    $(".item-eye").click(function() {
+        $("body").toggleClass('bw font-plus-block')
+        $(".icon-hide-type1").toggleClass('d-none')
+        $(".icon-hide-type2").toggleClass('d-none')
+        $(".increase-font").removeClass('d-none');
+        $("body").removeClass('fp-none')
+    });
+
+    $(".font-plus").click(function() {
+        if ($('body').hasClass('font-plus2'))
+            $('body').addClass('font-plus4'),
+                $('body').removeClass('font-plus2');
+        else
+            $('body').addClass('font-plus2');
+    });
+    $(".font-minus").click(function() {
+        if ($('body').hasClass('font-plus2'))
+            $('body').removeClass('font-plus2');
+        else
+            $('body').addClass('font-plus2');
+        $('body').removeClass('font-plus4')
+    });
+
+    $(".increase-font .close").click(function(e) {
+        $(".increase-font").addClass('d-none');
+        $("body").addClass('fp-none');
     });
 });
 

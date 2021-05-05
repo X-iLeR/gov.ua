@@ -880,6 +880,12 @@ svg {
 .carousel-container .item img{
     margin: 0 auto;
 }
+.slick-prev{
+    left: -32px;
+}
+.slick-next{
+    right: -32px;
+}
 
 .slick-prev, .slick-next{
     width: 30px;
@@ -888,8 +894,17 @@ svg {
     align-items: center;
     background-color: #4e7799;
     justify-content: center;
-    border: 5px solid #134a77;
+    border: 6px solid #134a77;
     border-radius: 100%;
+}
+
+.slick-next:focus,
+.slick-prev:focus{
+    background-color: #4e7799;
+}
+
+.slick-prev:hover, .slick-next:hover{
+    background-color: #c4d1d6;
 }
 
 .slick-prev:before, .slick-next:before{
@@ -897,9 +912,6 @@ svg {
     font-size: 24px;
     opacity: 1;
     height: 20px;
-}
-.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus{
-    background-color: #4e7799;
 }
 
 .divider-blue {

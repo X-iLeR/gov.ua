@@ -491,6 +491,7 @@ svg {
     border-radius: 12px;
     padding: 0 8px;
     font-weight: 400;
+    font-size: 16px;
 }
 
 .main-page-news-list .time-block {
@@ -673,6 +674,7 @@ svg {
     flex: 45px;
     text-align: center;
     line-height: normal;
+    font-size: 18px;
 }
 
 .menu-type-cabinet {
@@ -1356,16 +1358,34 @@ body.bw .text-button-white{
     border-color: #000000;
 }
 
-body.font-plus2, body.font-plus4{
-    font-weight: normal;
-}
-
 .font-plus2  .navbar-brand .name-item,
-.font-plus2 .menu-type-cabinet .nav-link{
+.font-plus2 .menu-type-cabinet .nav-link,
+.font-plus2 .message-block .function,
+.font-plus2 .tabs-news-second-level .nav-link,
+.font-plus2 .time-block,
+.font-plus2 .text-button-white,
+.font-plus2 .information-item .label,
+.font-plus2 .item-gallery .header-item,
+.font-plus2 footer .description,
+.font-plus2 .about-links,
+.font-plus2 .developer-links .description{
     font-size: 18px;
 }
 
-.font-plus2 .increase-font p{
+.font-plus2 .page-news-list .text,
+.font-plus2 .information-item .name,
+.font-plus2 .item-gallery .description{
+    font-size: 19px;
+}
+
+.font-plus2 .increase-font p,
+.font-plus2 .message-block .name,
+.font-plus2 .message-block .message p,
+.font-plus2 .main-page-news-list .text,
+.font-plus2 .sm-banner .text,
+.font-plus2 .tabs-type-service-block .nav-link,
+.font-plus2  .service span,
+.font-plus2 footer .name{
     font-size: 20px;
 }
 
@@ -1373,10 +1393,72 @@ body.font-plus2, body.font-plus4{
     font-size: 21px;
 }
 
-.font-plus2 .main-menu .first-level > .nav-link{
+.font-plus2 .main-menu .first-level > .nav-link,
+.font-plus2 .tabs-type-first-level .nav-link,
+.font-plus2 .wide-banner .text-sm{
     font-size: 22px;
+}
+
+.font-plus2 .message-block .last-name {
+    font-size: 24px;
 }
 
 .font-plus2 .text-headline{
     font-size: 25px;
+}
+.font-plus2  .heading{
+    font-size: 26px;
+}
+
+
+.font-plus4  .navbar-brand .name-item,
+.font-plus4 .menu-type-cabinet .nav-link,
+.font-plus4 .message-block .function,
+.font-plus4 .tabs-news-second-level .nav-link,
+.font-plus4 .time-block,
+.font-plus4 .text-button-white,
+.font-plus4 .information-item .label,
+.font-plus4 .item-gallery .header-item,
+.font-plus4 footer .description,
+.font-plus4 .about-links,
+.font-plus4 .developer-links .description{
+    font-size: 20px;
+}
+
+.font-plus4 .page-news-list .text,
+.font-plus4 .information-item .name,
+.font-plus4 .item-gallery .description{
+    font-size: 21px;
+}
+
+.font-plus4 .increase-font p,
+.font-plus4 .message-block .name,
+.font-plus4 .message-block .message p,
+.font-plus4 .main-page-news-list .text,
+.font-plus4 .sm-banner .text,
+.font-plus4 .tabs-type-service-block .nav-link,
+.font-plus4  .service span,
+.font-plus4 footer .name{
+    font-size: 22px;
+}
+
+.font-plus4 .main-menu .dropdown-menu .nav-link span{
+    font-size: 23px;
+}
+
+.font-plus4 .main-menu .first-level > .nav-link,
+.font-plus4 .tabs-type-first-level .nav-link,
+.font-plus4 .wide-banner .text-sm{
+    font-size: 24px;
+}
+
+.font-plus4 .message-block .last-name {
+    font-size: 26px;
+}
+
+.font-plus4 .text-headline{
+    font-size: 27px;
+}
+.font-plus4  .heading{
+    font-size: 28px;
 }

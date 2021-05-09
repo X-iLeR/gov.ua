@@ -1,6 +1,8 @@
 @media (max-width: 1199px) {
     .gradient > div {
         position: relative;
+        padding-bottom: 22px;
+        padding-top: 50px;
     }
 
     .center-header > div {
@@ -10,48 +12,107 @@
     .right-header {
         order: -1;
         padding-top: 0;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        background: radial-gradient(425.02px at 50% 50%, #2a4b6b 0%, #2b3d59 100%);
+    }
+    .right-header:after{
+        position: absolute;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        content: "";
+        background: radial-gradient(400.02px at 50% 50%, #2a4767 0%, #2b3d59 100%);
     }
 
     .right-header .navbar-brand {
         flex-direction: row;
         justify-content: center;
-        width: calc(100% - 60px);
+        width: 100%;
     }
 
     .right-header .cabinet-item {
         order: 3;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 11px auto 15px;
+    }
+    .cabinet-item .name-item{
+        margin-top: 2px;
     }
 
-    .right-header .item-eye span,
-    .right-header .item-search span {
+    .right-header .item-eye .name-item,
+    .right-header .item-search .name-item {
         display: none;
     }
 
-    .right-header .item-eye,
-    .right-header .item-search {
+    .right-header .item-search{
+        position: absolute;
+        top: 12px;
+        left: 25px;
+    }
+
+    .right-header .item-eye{
+        position: absolute;
+        top: 12px;
+        left: 66px;
     }
 
     .main-menu {
+        position: fixed;
+        top: 50px;
+        right: 0;
+        margin-top: 0;
+        z-index: 99;
+    }
+
+    .navbar-toggler-mainMenu {
+        margin-top: 0;
         position: absolute;
         top: 0;
         right: 0;
+        z-index: 99;
     }
 
-    .main-menu > .navbar {
-        margin-top: 0;
-    }
-
-    .main-menu .navbar-collapse {
+    .main-menu .navbar-mainMenu {
         width: 100%;
         position: fixed;
-        top: 60px;
         left: 0;
         bottom: 0;
+        top: 50px;
         right: 0;
+        z-index: 99;
         background-color: #1a314b;
+        overflow: auto;
+        padding: 0 15px;
+        scrollbar-color: #cccccc;
+    scrollbar-width: thin;
+        transition: transform 0.3s linear;
+        transform: translate(0, -100%);
     }
+
+    .main-menu.show .navbar-mainMenu{
+        transform: translate(0);
+    }
+
+    .main-menu .navbar-mainMenu .navbar-nav{
+        flex-direction: row;
+    }
+    .main-menu .navbar-mainMenu > .navbar-nav{
+        padding: 8px 0;
+    }
+
+    .dropdown-back .nav-link{
+        width: 100%;
+    }
+
+    .main-menu .navbar-mainMenu::-webkit-scrollbar {
+     width: 6px;
+     height: 6px;
+ }
+
+    .main-menu .navbar-mainMenu::-webkit-scrollbar-thumb {
+     background-color: #cccccc;
+}
 
     .first-level-link .angle-right-bottom,
     .first-level-link .line {
@@ -72,6 +133,61 @@
     }
     .carousel-container{
         padding: 30px 45px 35px;
+    }
+    .main-menu .first-level{
+        flex: 50%;
+    }
+    .main-menu .first-level:nth-child(2n){
+        padding: 0 11px 0 15px;
+    }
+    .main-menu .first-level:nth-child(2n + 1){
+        padding: 0 15px 0 11px;
+    }
+    .main-menu .first-level > .nav-link{
+        padding: 0;
+    }
+    .increase-font{
+        position: fixed;
+        z-index: 100;
+        right: 0;
+        left: 0;
+        top: -52px;
+    }
+    .font-plus-block:not(.fp-none) .gradient{
+        margin-top: 52px;
+    }
+    .first-level-show .first-level:not(.show){
+        display: none;
+    }
+    .first-level-show .first-level.show > .nav-link{
+        display: none !important;
+    }
+    .first-level.submenu-open > .dropdown-menu > .navbar-nav > .nav-item:not(.submenu-open){
+        display: none !important;
+    }
+    .main-menu .submenu-open > .nav-link{
+        display: none;
+    }
+    .main-menu .submenu-open{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .submenu-open .back-first-level{
+        order: -2;
+    }
+    .main-menu .submenu-open .back-second-level +.nav-item{
+        order: -1;
+    }
+    .dropdown-menu.submenu .back-first-level .nav-link{
+        background-color: #1c4065;
+    }
+    .main-menu .dropdown-menu .nav-link{
+        margin-top: 10px;
+    }
+    .main-menu .dropdown-menu{
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 

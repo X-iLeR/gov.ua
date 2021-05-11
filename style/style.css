@@ -1276,8 +1276,9 @@ a.item-gallery,
     position: relative;
     height: 52px;
 }
-.increase-font .close {
-    display: none;
+.increase-font .close-button,
+.search-form .close-button{
+    display: block;
     position: absolute;
     width: 24px;
     height: 24px;
@@ -1287,12 +1288,13 @@ a.item-gallery,
     opacity: 1;
 }
 
-.increase-font .close {
-    display: block;
+.search-form .close-button{
+    top: 20px;
+    right: 20px;
 }
 
-.increase-font .close:before,
-.increase-font .close:after {
+.close-button:before,
+.close-button:after {
     position: absolute;
     content: ' ';
     height: 28px;
@@ -1302,16 +1304,16 @@ a.item-gallery,
     background: #4da9cf;
 }
 
-.increase-font .close:before,
-.increase-font .close:after {
+.close-button:before,
+.close-button:after {
     background: #ffffff;
 }
 
-.increase-font .close:before {
+.close-button:before {
     transform: rotate(45deg);
 }
 
-.increase-font .close:after {
+.close-button:after {
     transform: rotate(-45deg);
 }
 .bw .font-minus {
@@ -1385,7 +1387,8 @@ body.bw .text-button-white{
 .font-plus2 .item-gallery .header-item,
 .font-plus2 footer .description,
 .font-plus2 .about-links,
-.font-plus2 .developer-links .description{
+.font-plus2 .developer-links .description,
+.font-plus2 .search-input-block span{
     font-size: 18px;
 }
 
@@ -1402,7 +1405,10 @@ body.bw .text-button-white{
 .font-plus2 .sm-banner .text,
 .font-plus2 .tabs-type-service-block .nav-link,
 .font-plus2  .service span,
-.font-plus2 footer .name{
+.font-plus2 footer .name,
+.font-plus2 .btns-wrap a,
+.font-plus2 .btns-wrap .or,
+.font-plus2  .search-button{
     font-size: 20px;
 }
 
@@ -1438,7 +1444,8 @@ body.bw .text-button-white{
 .font-plus4 .item-gallery .header-item,
 .font-plus4 footer .description,
 .font-plus4 .about-links,
-.font-plus4 .developer-links .description{
+.font-plus4 .developer-links .description,
+.font-plus4 .search-input-block span{
     font-size: 20px;
 }
 
@@ -1455,7 +1462,10 @@ body.bw .text-button-white{
 .font-plus4 .sm-banner .text,
 .font-plus4 .tabs-type-service-block .nav-link,
 .font-plus4  .service span,
-.font-plus4 footer .name{
+.font-plus4 footer .name,
+.font-plus4 .btns-wrap a,
+.font-plus4 .btns-wrap .or,
+.font-plus4  .search-button{
     font-size: 22px;
 }
 
@@ -1567,4 +1577,73 @@ body.bw .text-button-white{
 
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before{
     opacity: 1;
+}
+.search-form{
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    background-color: #1a314b;
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    left: 0;
+    border-radius: 0 0 15px 15px;
+    display: none;
+}
+.search-form.show{
+    transform: translate(0, 0);
+    display: block;
+}
+.btns-wrap{
+    margin-top: 65px;
+    padding-left: 20px;
+    margin-bottom: 60px;
+}
+.btns-wrap a{
+    padding: 10px 19px;
+    color: #ffffff;
+    font-size: 18px;
+}
+.btns-wrap a:hover{
+    text-decoration: none;
+}
+.button-form{
+    border-radius: 20px;
+    background-color: #2568b0;
+}
+.btns-wrap .or {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #ffffff;
+    font-size: 18px;
+}
+.btns-wrap .dashed{
+   border-bottom: 1px dashed #fff;
+      padding: 3px 0px;
+  }
+.search-input-block span{
+    color: #ffffff;
+    font-size: 16px;
+}
+.search-input-block label{
+    flex-direction: column;
+    display: flex;
+}
+.search-input-block input{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    padding: 0 16px;
+    margin-top: 4px;
+}
+.search-button{
+    width: 100%;
+    height: 40px;
+    background-color: #ffe358;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
 }

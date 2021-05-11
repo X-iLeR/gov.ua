@@ -262,6 +262,8 @@ padding-left: 11px;
         transition: transform 0.3s linear;
         transform: translate(0, -100%);
         display: block;
+        top: 50px;
+        position: fixed;
     }
     .search-form.show{
         transform: translate(0, 0);

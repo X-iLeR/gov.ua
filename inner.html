@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>title</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <META content="text/html; charset=utf-8" http-equiv=Content-Type>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="node_modules/slick-carousel/slick/slick.css" rel="stylesheet" type="text/css">
+    <link href="node_modules/slick-carousel/slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <link href="style/media.css" rel="stylesheet" type="text/css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script charset="utf-8" src="node_modules/slick-carousel/slick/slick.js" type="text/javascript"></script>
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+<header>
+    <div class="increase-font">
+        <div class="container-fluid container-xl">
+            <div class="close-button"></div>
+            <p class="font-plus"><span>А+ </span>збільшити шрифт</p>
+            <p class="font-minus"><span>А- </span>зменшити шрифт</p>
+        </div>
+    </div>
+    <div class="gradient">
+        <div class="container-fluid container-xl">
+            <div class="row">
+                <div class="col-xl-3 d-xl-flex d-sm-none left-header">
+                    <a href="#">
+                        <img src="img/gov_ua.png">
+                    </a>
+                </div>
+                <div class="col-xl-6 d-flex flex-column align-items-center center-header position-relative">
+                    <div class="city-arms"></div>
+                    <div class="d-flex flex-column align-items-center">
+                        <p class="font-weight-bold text-white text-center text-headline">
+                            Офіційний вебсайт Криворізької міської ради
+                            та її виконавчого комітету
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-1  d-xl-flex d-lg-none empty-header-block"></div>
+                <div class="col-xl-2 pt-xl-4 right-header">
+                    <nav class="navbar-brand d-flex mobileMenuOpen">
+                        <div class="item cabinet-item">
+                            <ul class="nav">
+                                <li class="nav-item dropdown">
+                                    <a aria-expanded="false" aria-haspopup="true"
+                                       class="submenu-button grid cabinetMenu-open"
+                                       data-toggle="dropdown" href="#" id="cabinetMenu"
+                                       role="button">
+                                        <span class="icon icon-user">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style>.cls-1 {
+                                                fill: #224f91;
+                                            }</style></defs><title>user</title><g id="Layer_10" data-name="Layer 10"><path
+                                                    class="cls-1"
+                                                    d="M15,24a9,9,0,1,1,9-9A9,9,0,0,1,15,24ZM15,8a7,7,0,1,0,7,7A7,7,0,0,0,15,8Z"/><path
+                                                    class="cls-1"
+                                                    d="M15,24a9,9,0,0,1-6.91-3.24,1,1,0,0,1,.15-1.43,10.92,10.92,0,0,1,2.63-1.52,5,5,0,1,1,8.26,0,10.92,10.92,0,0,1,2.63,1.52,1,1,0,0,1,.15,1.43A9,9,0,0,1,15,24Zm-4.6-3.73a7,7,0,0,0,9.2,0,8.93,8.93,0,0,0-2.54-1,1,1,0,0,1-.34-1.79,3,3,0,1,0-3.43,0,1,1,0,0,1-.34,1.79A8.93,8.93,0,0,0,10.4,20.27Z"/></g></svg>
+                                        </span>
+                                        <span class="text-white name-item">Кабінет мешканця</span>
+                                    </a>
+                                    <div aria-labelledby="cabinetMenu" class="dropdown-menu submenu menu-type-cabinet">
+                                        <ul class="navbar-nav mr-auto cabinet-menu">
+                                            <li class="nav-item heading-menu">
+                                                <div class="grid">
+                                                    <div class="icon icon-user">
+                                                        <svg height="32px" viewBox="0 0 30 30"
+                                                             width="32px"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <title>user</title>
+                                                            <g data-name="Layer 10" id="Layer_10">
+                                                                <path class="cls-1"
+                                                                      d="M15,24a9,9,0,1,1,9-9A9,9,0,0,1,15,24ZM15,8a7,7,0,1,0,7,7A7,7,0,0,0,15,8Z"/>
+                                                                <path class="cls-1"
+                                                                      d="M15,24a9,9,0,0,1-6.91-3.24,1,1,0,0,1,.15-1.43,10.92,10.92,0,0,1,2.63-1.52,5,5,0,1,1,8.26,0,10.92,10.92,0,0,1,2.63,1.52,1,1,0,0,1,.15,1.43A9,9,0,0,1,15,24Zm-4.6-3.73a7,7,0,0,0,9.2,0,8.93,8.93,0,0,0-2.54-1,1,1,0,0,1-.34-1.79,3,3,0,1,0-3.43,0,1,1,0,0,1-.34,1.79A8.93,8.93,0,0,0,10.4,20.27Z"/>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <span class="nav-link name-item">Ваш кабінет</span>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link grid" href="#">
+                                                    <div class="icon icon-add">
+                                                        <svg height="21px" id="Capa_1"
+                                                             style="enable-background:new 0 0 512 512;"
+                                                             version="1.1" viewBox="0 0 512 512"
+                                                             width="21px" x="0px" xml:space="preserve"
+                                                             xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             y="0px">
+<g>
+	<g>
+		<path d="M256,0C114.833,0,0,114.833,0,256s114.833,256,256,256s256-114.853,256-256S397.167,0,256,0z M256,472.341    c-119.275,0-216.341-97.046-216.341-216.341S136.725,39.659,256,39.659S472.341,136.705,472.341,256S375.295,472.341,256,472.341z    "/>
+	</g>
+</g>
+                                                            <g>
+	<g>
+		<path d="M355.148,234.386H275.83v-79.318c0-10.946-8.864-19.83-19.83-19.83s-19.83,8.884-19.83,19.83v79.318h-79.318    c-10.966,0-19.83,8.884-19.83,19.83s8.864,19.83,19.83,19.83h79.318v79.318c0,10.946,8.864,19.83,19.83,19.83    s19.83-8.884,19.83-19.83v-79.318h79.318c10.966,0,19.83-8.884,19.83-19.83S366.114,234.386,355.148,234.386z"/>
+	</g>
+</g>
+</svg>
+                                                    </div>
+                                                    <span class="name-item">Створити звернення</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link grid" href="#">
+                                                    <div class="icon icon-file">
+                                                        <svg height="21px"
+                                                             id="Capa_1" version="1.1"
+                                                             viewBox="0 0 512 512" width="21px"
+                                                             x="0px" xml:space="preserve"
+                                                             xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             y="0px">
+<g>
+	<g>
+		<path d="M436,60h-15V45c0-24.813-20.187-45-45-45H76C51.187,0,31,20.187,31,45v362c0,24.813,20.187,45,45,45h15v15    c0,24.813,20.187,45,45,45h300c24.813,0,45-20.187,45-45V105C481,80.187,460.813,60,436,60z M104.18,115.607    C95.68,124.106,91,135.406,91,147.426V422H76c-8.271,0-15-6.729-15-15V45c0-8.271,6.729-15,15-15h300c8.271,0,15,6.729,15,15v15    H178.426c-12.02,0-23.32,4.681-31.819,13.18L104.18,115.607z M181,90v60h-60v-2.574c0-4.006,1.56-7.773,4.393-10.606    l42.427-42.427c2.833-2.833,6.6-4.393,10.606-4.393H181z M451,467c0,8.271-6.729,15-15,15H136c-8.271,0-15-6.729-15-15V180h75    c8.284,0,15-6.716,15-15V90h225c8.271,0,15,6.729,15,15V467z"/>
+	</g>
+</g>
+                                                            <g>
+	<g>
+		<path d="M406,212H166c-8.284,0-15,6.716-15,15s6.716,15,15,15h240c8.284,0,15-6.716,15-15S414.284,212,406,212z"/>
+	</g>
+</g>
+                                                            <g>
+	<g>
+		<path d="M406,272H166c-8.284,0-15,6.716-15,15s6.716,15,15,15h240c8.284,0,15-6.716,15-15S414.284,272,406,272z"/>
+	</g>
+</g>
+                                                            <g>
+	<g>
+		<path d="M406,332H166c-8.284,0-15,6.716-15,15s6.716,15,15,15h240c8.284,0,15-6.716,15-15S414.284,332,406,332z"/>
+	</g>
+</g>
+                                                            <g>
+	<g>
+		<path d="M406,392H166c-8.284,0-15,6.716-15,15s6.716,15,15,15h240c8.284,0,15-6.716,15-15S414.284,392,406,392z"/>
+	</g>
+</g>
+</svg>
+                                                    </div>
+                                                    <span class="name-item">Мої звернення</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="navbar-nav mr-auto">
+                                            <li class="nav-item">
+                                                <a class="nav-link grid" href="#">
+                                                    <div class="icon icon-user-type2">
+                                                        <svg height="21px" id="Layer_1"
+                                                             style="enable-background:new 0 0 440.248 440.248;"
+                                                             version="1.1" viewBox="0 0 440.248 440.248"
+                                                             width="21px" x="0px" xml:space="preserve"
+                                                             xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             y="0px">
+<g>
+	<path d="M126.195,150c41.355,0,75-33.645,75-75s-33.645-75-75-75s-75,33.645-75,75S84.84,150,126.195,150z M126.195,30   c24.813,0,45,20.187,45,45s-20.187,45-45,45s-45-20.187-45-45S101.382,30,126.195,30z"/>
+    <path d="M356.486,108.82L229.576,235.729C206.944,201.327,168.313,180,126.195,180c-68.236,0-123.75,55.514-123.75,123.75v15   h144.11l-6.656,6.656l-33.524,114.842l114.842-33.525l216.586-216.585L356.486,108.82z M395.376,190.138l-28.055,28.054   l-38.891-38.891l28.055-28.054L395.376,190.138z M33.644,288.75C40.845,244.162,79.606,210,126.195,210   c34.024,0,65.053,18.367,81.578,47.532l-31.218,31.218H33.644z M205.436,380.078l-54.924,16.034l16.033-54.924l140.673-140.673   l38.891,38.891L205.436,380.078z"/>
+</g>
+</svg>
+                                                    </div>
+                                                    <span class="name-item">Редагувати профіль</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link grid" href="#">
+                                                    <div class="icon icon-email">
+                                                        <svg height="21px" id="Capa_1"
+                                                             style="enable-background:new 0 0 512 512;"
+                                                             version="1.1" viewBox="0 0 512 512"
+                                                             width="21px" x="0px" xml:space="preserve"
+                                                             xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             y="0px">
+<g>
+	<g>
+		<path d="M467,61H45C20.218,61,0,81.196,0,106v300c0,24.72,20.128,45,45,45h422c24.72,0,45-20.128,45-45V106    C512,81.28,491.872,61,467,61z M460.786,91L256.954,294.833L51.359,91H460.786z M30,399.788V112.069l144.479,143.24L30,399.788z     M51.213,421l144.57-144.57l50.657,50.222c5.864,5.814,15.327,5.795,21.167-0.046L317,277.213L460.787,421H51.213z M482,399.787    L338.213,256L482,112.212V399.787z"/>
+	</g>
+</g>
+</svg>
+                                                    </div>
+                                                    <span class="name-item">Змінити email</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link grid" href="#">
+                                                    <div class="icon icon-password">
+                                                        <svg height="21px" id="Capa_1"
+                                                             style="enable-background:new 0 0 512 512;"
+                                                             version="1.1" viewBox="0 0 512 512"
+                                                             width="21px" x="0px" xml:space="preserve"
+                                                             xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             y="0px">
+<g>
+	<g>
+		<g>
+			<circle cx="370" cy="346" r="20"/>
+            <path d="M460,362c11.046,0,20-8.954,20-20v-74c0-44.112-35.888-80-80-80h-24.037v-70.534C375.963,52.695,322.131,0,255.963,0     s-120,52.695-120,117.466V188H112c-44.112,0-80,35.888-80,80v164c0,44.112,35.888,80,80,80h288c44.112,0,80-35.888,80-80     c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20c0,22.056-17.944,40-40,40H112c-22.056,0-40-17.944-40-40V268     c0-22.056,17.944-40,40-40h288c22.056,0,40,17.944,40,40v74C440,353.046,448.954,362,460,362z M335.963,188h-160v-70.534     c0-42.715,35.888-77.466,80-77.466s80,34.751,80,77.466V188z"/>
+            <circle cx="219" cy="346" r="20"/>
+            <circle cx="144" cy="346" r="20"/>
+            <circle cx="294" cy="346" r="20"/>
+		</g>
+	</g>
+</g>
+</svg>
+                                                    </div>
+                                                    <span class="name-item">Змінити пароль</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link grid" href="#">
+                                                    <div class="icon icon-logout">
+                                                        <svg height="21px" id="Layer_1"
+                                                             style="enable-background:new 0 0 330 330;"
+                                                             version="1.1" viewBox="0 0 330 330"
+                                                             width="21px" x="0px" xml:space="preserve"
+                                                             xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             y="0px">
+<g id="XMLID_2_">
+	<path d="M51.213,180h173.785c8.284,0,15-6.716,15-15s-6.716-15-15-15H51.213l19.394-19.393   c5.858-5.857,5.858-15.355,0-21.213c-5.856-5.858-15.354-5.858-21.213,0L4.397,154.391c-0.348,0.347-0.676,0.71-0.988,1.09   c-0.076,0.093-0.141,0.193-0.215,0.288c-0.229,0.291-0.454,0.583-0.66,0.891c-0.06,0.09-0.109,0.185-0.168,0.276   c-0.206,0.322-0.408,0.647-0.59,0.986c-0.035,0.067-0.064,0.138-0.099,0.205c-0.189,0.367-0.371,0.739-0.53,1.123   c-0.02,0.047-0.034,0.097-0.053,0.145c-0.163,0.404-0.314,0.813-0.442,1.234c-0.017,0.053-0.026,0.108-0.041,0.162   c-0.121,0.413-0.232,0.83-0.317,1.257c-0.025,0.127-0.036,0.258-0.059,0.386c-0.062,0.354-0.124,0.708-0.159,1.069   C0.025,163.998,0,164.498,0,165s0.025,1.002,0.076,1.498c0.035,0.366,0.099,0.723,0.16,1.08c0.022,0.124,0.033,0.251,0.058,0.374   c0.086,0.431,0.196,0.852,0.318,1.269c0.015,0.049,0.024,0.101,0.039,0.15c0.129,0.423,0.28,0.836,0.445,1.244   c0.018,0.044,0.031,0.091,0.05,0.135c0.16,0.387,0.343,0.761,0.534,1.13c0.033,0.065,0.061,0.133,0.095,0.198   c0.184,0.341,0.387,0.669,0.596,0.994c0.056,0.088,0.104,0.181,0.162,0.267c0.207,0.309,0.434,0.603,0.662,0.895   c0.073,0.094,0.138,0.193,0.213,0.285c0.313,0.379,0.641,0.743,0.988,1.09l44.997,44.997C52.322,223.536,56.161,225,60,225   s7.678-1.464,10.606-4.394c5.858-5.858,5.858-15.355,0-21.213L51.213,180z"
+          id="XMLID_4_"/>
+    <path d="M207.299,42.299c-40.944,0-79.038,20.312-101.903,54.333c-4.62,6.875-2.792,16.195,4.083,20.816   c6.876,4.62,16.195,2.794,20.817-4.083c17.281-25.715,46.067-41.067,77.003-41.067C258.414,72.299,300,113.884,300,165   s-41.586,92.701-92.701,92.701c-30.845,0-59.584-15.283-76.878-40.881c-4.639-6.865-13.961-8.669-20.827-4.032   c-6.864,4.638-8.67,13.962-4.032,20.826c22.881,33.868,60.913,54.087,101.737,54.087C274.956,287.701,330,232.658,330,165   S274.956,42.299,207.299,42.299z"
+          id="XMLID_5_"/>
+</g>
+</svg>
+                                                    </div>
+                                                    <span class="name-item">Вийти з профілю</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="item item-eye" href="#">
+                            <div class="grid">
+                                <span class="icon icon-hide-type1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style>.cls-1 {
+                                        fill: #224f91;
+                                    }</style></defs><title>hide_1</title><g id="Layer_10" data-name="Layer 10"><path
+                                            class="cls-1"
+                                            d="M26.62,14.27A15,15,0,0,0,15.78,9a6,6,0,0,0-.64,0c-.19,0-.38,0-.56,0l-2,.21a12.59,12.59,0,0,0-1.93.46,19.58,19.58,0,0,0-1.88.72,12.71,12.71,0,0,0-1.78,1c-.44.31-1.3,1-1.72,1.31a12.64,12.64,0,0,0-1.6,1.6l-.52.64a4.73,4.73,0,0,0,1.2,1.58,16,16,0,0,1,1.42-1.58l.07-.07,1,3.55a15.07,15.07,0,0,0,2.43,1.34L7.52,13.4a13,13,0,0,1,1.77-1.08l2.19,8.18a14.56,14.56,0,0,0,2.17.39l-2.5-9.35a13,13,0,0,1,1.93-.45l2.63,9.82,2-.24a15,15,0,0,0,8.9-5.11A1,1,0,0,0,26.62,14.27Zm-7.48.64a4,4,0,0,1-2,3.45l-.41-1.52a2.47,2.47,0,0,0,.95-1.94,2.49,2.49,0,0,0-2.12-2.46l-.41-1.54h0A4,4,0,0,1,19.14,14.92Zm1.27,2.87a6,6,0,0,0,0-5.74,13,13,0,0,1,4.11,2.88A12.94,12.94,0,0,1,20.41,17.78Z"/></g></svg>
+                                </span>
+                                <span class="icon icon-hide-type2 d-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style>.cls-1 {
+                                        fill: #224f91;
+                                    }</style></defs><title>hide</title><g id="Layer_10" data-name="Layer 10"><path
+                                            class="cls-1"
+                                            d="M26.48,14.36A15,15,0,0,0,15.64,9,6,6,0,0,0,15,9c-.19,0-.38,0-.56,0L13.38,5.08l-1.93.52,1,3.65a12.59,12.59,0,0,0-1.93.46,19.58,19.58,0,0,0-1.88.72,12.71,12.71,0,0,0-1.78,1c-.44.31-1.3,1-1.72,1.31a12.64,12.64,0,0,0-1.6,1.6L3,15a4.73,4.73,0,0,0,1.2,1.58A16,16,0,0,1,5.63,15l.07-.07,1,3.55a15.07,15.07,0,0,0,2.43,1.34l-1.7-6.33a13,13,0,0,1,1.77-1.08l2.19,8.18a14.56,14.56,0,0,0,2.17.39L11,11.63a13,13,0,0,1,1.93-.45l3.68,13.74,1.93-.52-1-3.64a15,15,0,0,0,8.9-5.11A1,1,0,0,0,26.48,14.36ZM19,15a4,4,0,0,1-2,3.45l-.41-1.52A2.47,2.47,0,0,0,17.5,15a2.49,2.49,0,0,0-2.12-2.46L15,11h0A4,4,0,0,1,19,15Zm1.27,2.87a6,6,0,0,0,0-5.74A13,13,0,0,1,24.37,15,12.94,12.94,0,0,1,20.27,17.87Z"/></g></svg>
+                                </span>
+                                <span class="text-white name-item">Людям із порушенням зору</span>
+                            </div>
+                        </a>
+                        <a class="item item-search" href="#">
+                            <div class="grid">
+                                <span class="icon icon-search">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style>.cls-1 {
+                                        fill: #224f91;
+                                    }</style></defs><title>search</title><g id="Layer_10" data-name="Layer 10"><path
+                                            class="cls-1"
+                                            d="M25,23.59l-4-4A9,9,0,1,0,19.61,21l4,4A1,1,0,0,0,25,23.59ZM14,21a7,7,0,1,1,7-7A7,7,0,0,1,14,21Z"/></g></svg>
+                                </span>
+                                <span class="text-white name-item">Пошук по сайту</span>
+                            </div>
+                        </a>
+                        <div class="submenu-button grid cabinetMenu-open mobileOpen d-xl-none">
+                                        <span class="icon icon-user">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style>.cls-1 {
+                                                fill: #224f91;
+                                            }</style></defs><title>user</title><g id="Layer_10" data-name="Layer 10"><path
+                                                    class="cls-1"
+                                                    d="M15,24a9,9,0,1,1,9-9A9,9,0,0,1,15,24ZM15,8a7,7,0,1,0,7,7A7,7,0,0,0,15,8Z"/><path
+                                                    class="cls-1"
+                                                    d="M15,24a9,9,0,0,1-6.91-3.24,1,1,0,0,1,.15-1.43,10.92,10.92,0,0,1,2.63-1.52,5,5,0,1,1,8.26,0,10.92,10.92,0,0,1,2.63,1.52,1,1,0,0,1,.15,1.43A9,9,0,0,1,15,24Zm-4.6-3.73a7,7,0,0,0,9.2,0,8.93,8.93,0,0,0-2.54-1,1,1,0,0,1-.34-1.79,3,3,0,1,0-3.43,0,1,1,0,0,1-.34,1.79A8.93,8.93,0,0,0,10.4,20.27Z"/></g></svg>
+                                        </span>
+                            <span class="text-white name-item">Кабінет мешканця</span>
+                        </div>
+                        <div class="navbar-toggler-mainMenu d-xl-none">
+                        <span class="navbar-toggler-icon">
+                       </span>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="main-menu">
+                <nav class="navbar navbar-expand-xl navbar-light">
+
+                    <div class="navbar-collapse navbar-mainMenu">
+                        <ul class="navbar-nav flex-lg-row flex-column flex-xl-nowrap flex-lg-wrap nav-fill w-100">
+                            <li class="nav-item first-level dropdown-container">
+                                <a aria-expanded="false" aria-haspopup="true"
+                                   class="nav-link d-flex align-items-center first-level-link"
+                                   href="#"
+                                   id="proMisto" role="button">
+                                    <span>Про місто</span>
+                                    <span class="line more"></span>
+                                </a>
+                                <div aria-labelledby="proMisto" class="dropdown-menu">
+                                    <ul class="navbar-nav mr-xl-auto menu-grid row">
+                                        <li class="nav-item dropdown-back back-first-level d-xl-none d-lg-flex col-xl-3 col-lg-6">
+                                            <a class="nav-link" href="#">
+                                                <span>
+                                           Про місто
+                                        </span>
+                                                <span class="line"></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item col-xl-3  col-lg-6">
+                                            <a aria-expanded="false" aria-haspopup="true"
+                                               class="nav-link submenu-button"
+                                               href="#" id="proMisto2"
+                                               role="button">
+                                            <span>
+                                           Відділ організації діяльності керівництва
+                                        </span>
+                                                <span class="line more"></span>
+                                            </a>
+                                            <div aria-labelledby="proMisto2" class="dropdown-menu submenu">
+                                                <ul class="navbar-nav mr-xl-auto menu-grid row">
+                                                    <li class="nav-item dropdown-back back-first-level d-xl-none d-lg-flex col-xl-3  col-lg-6">
+                                                        <a class="nav-link" href="#">
+                                                            <span>
+                                           Про місто
+                                        </span>
+                                                            <span class="line"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item dropdown-back back-second-level col-xl-3  col-lg-6">
+                                                        <a class="nav-link" href="#">
+                                                            <span>
+                                           Подпункт Відділ організації діяльності керівництва
+                                        </span>
+                                                            <span class="line"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item col-xl-3  col-lg-6">
+                                                        <a class="nav-link" href="#">
+                                                        <span>
+                                           Подпункт Відділ організації діяльності керівництва
+                                        </span>
+                                                            <span class="line"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item col-xl-3  col-lg-6">
+                                            <a aria-expanded="false" aria-haspopup="true"
+                                               class="nav-link submenu-button"
+                                               href="#" id="proMisto3"
+                                               role="button">
+                                            <span>
+                                          Відділ організації діяльності керівництва
+                                        </span>
+                                                <span class="line more"></span>
+                                            </a>
+                                            <div aria-labelledby="proMisto3" class="dropdown-menu submenu">
+                                                <ul class="navbar-nav mr-xl-auto menu-grid row">
+                                                    <li class="nav-item dropdown-back back-first-level d-xl-none d-lg-flex col-xl-3  col-lg-6">
+                                                        <a class="nav-link" href="#">
+                                                            <span>
+                                           Про місто
+                                        </span>
+                                                            <span class="line"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item dropdown-back back-second-level col-xl-3  col-lg-6">
+                                                        <a class="nav-link" href="#">
+                                                            <span>
+                                           Подпункт Відділ організації діяльності керівництва
+                                        </span>
+                                                            <span class="line"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item col-xl-3  col-lg-6">
+                                                        <a class="nav-link" href="#">
+                                                        <span>
+                                           Подпункт Відділ організації діяльності керівництва
+                                        </span>
+                                                            <span class="line"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item col-xl-3  col-lg-6">
+                                            <a class="nav-link" href="#">
+                                                        <span>
+                                           Подпункт Відділ організації діяльності керівництва
+                                        </span>
+                                                <span class="line"></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item col-xl-3  col-lg-6">
+                                            <a class="nav-link" href="#">
+                                                        <span>
+                                           Подпункт Відділ організації діяльності керівництва
+                                        </span>
+                                                <span class="line"></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item col-xl-3  col-lg-6">
+                                            <a class="nav-link" href="#">
+                                                        <span>
+                                           Подпункт Відділ організації діяльності керівництва
+                                        </span>
+                                                <span class="line"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item first-level">
+                                <a aria-expanded="false" aria-haspopup="true"
+                                   class="nav-link d-flex align-items-center first-level-link"
+                                   href="#"
+                                   id="novyny" role="button">
+                                    <span>Новини</span>
+                                    <span class="line more"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item first-level">
+                                <a aria-expanded="false" aria-haspopup="true"
+                                   class="nav-link d-flex align-items-center first-level-link"
+                                   href="#"
+                                   id="miscevaVlada" role="button">
+                                    <span>
+                                        Місцева влада
+                                    </span>
+                                    <span class="line more"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item first-level">
+                                <a aria-expanded="false" aria-haspopup="true"
+                                   class="nav-link d-flex align-items-center first-level-link"
+                                   href="#"
+                                   id="pidrozdily" role="button">
+                                    <span>Підрозділи</span>
+                                    <span class="line more"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item first-level">
+                                <a aria-expanded="false" aria-haspopup="true"
+                                   class="nav-link d-flex align-items-center first-level-link"
+                                   href="#"
+                                   id="zakonodavstvo" role="button">
+                                    <span>Законодавство</span>
+                                    <span class="line more"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item first-level">
+                                <a aria-expanded="false" aria-haspopup="true"
+                                   class="nav-link d-flex align-items-center first-level-link"
+                                   href="#"
+                                   id="informacіjnaBaza" role="button">
+                                    <span>Інформаційна база</span>
+                                    <span class="line more"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item first-level">
+                                <a aria-expanded="false" aria-haspopup="true"
+                                   class="nav-link d-flex align-items-center first-level-link"
+                                   href="#"
+                                   id="publіchnaInformacіya" role="button">
+                                    <span>Публічна інформація</span>
+                                    <span class="line more"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item first-level dropdown-container">
+                                <a aria-expanded="false" aria-haspopup="true"
+                                   class="nav-link d-flex align-items-center first-level-link"
+                                   href="#"
+                                   id="byudzhet" role="button">
+                                    <span>Бюджет</span>
+                                    <span class="line more"></span>
+                                </a>
+                                <div aria-labelledby="proMisto" class="dropdown-menu">
+                                    <ul class="navbar-nav mr-xl-auto menu-grid row">
+                                        <li class="nav-item dropdown-back back-first-level d-xl-none d-lg-flex col-xl-3 col-lg-6">
+                                            <a class="nav-link" href="#">
+                                                <span>
+                                           Про місто
+                                        </span>
+                                                <span class="line"></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item col-xl-3  col-lg-6">
+                                            <a aria-expanded="false" aria-haspopup="true"
+                                               class="nav-link submenu-button"
+                                               href="#"
+                                               role="button">
+                                            <span>
+                                           Відділ організації діяльності керівництва 1111
+                                        </span>
+                                                <span class="line more"></span>
+                                            </a>
+                                            <div aria-labelledby="proMisto2" class="dropdown-menu submenu">
+                                                <ul class="navbar-nav mr-xl-auto menu-grid row">
+                                                    <li class="nav-item dropdown-back back-first-level d-xl-none d-lg-flex col-xl-3  col-lg-6">
+                                                        <a class="nav-link" href="#">
+                                                            <span>
+                                           Про місто
+                                        </span>
+                                                            <span class="line"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item dropdown-back back-second-level col-xl-3  col-lg-6">
+                                                        <a class="nav-link" href="#">
+                                                            <span>
+                                           Подпункт Відділ організації діяльності керівництва
+                                        </span>
+                                                            <span class="line"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item col-xl-3  col-lg-6">
+                                                        <a class="nav-link" href="#">
+                                                        <span>
+                                           Подпункт Відділ організації діяльності керівництва
+                                        </span>
+                                                            <span class="line"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item col-xl-3  col-lg-6">
+                                            <a aria-expanded="false" aria-haspopup="true"
+                                               class="nav-link submenu-button"
+                                               href="#"
+                                               role="button">
+                                            <span>
+                                          Відділ організації діяльності керівництва
+                                        </span>
+                                                <span class="line more"></span>
+                                            </a>
+                                            <div aria-labelledby="proMisto3" class="dropdown-menu submenu">
+                                                <ul class="navbar-nav mr-xl-auto menu-grid row">
+                                                    <li class="nav-item dropdown-back back-first-level d-xl-none d-lg-flex col-xl-3  col-lg-6">
+                                                        <a class="nav-link" href="#">
+                                                            <span>
+                                           Про місто
+                                        </span>
+                                                            <span class="line"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item dropdown-back back-second-level col-xl-3  col-lg-6">
+                                                        <a class="nav-link" href="#">
+                                                            <span>
+                                           Подпункт Відділ організації діяльності керівництва
+                                        </span>
+                                                            <span class="line"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item col-xl-3  col-lg-6">
+                                                        <a class="nav-link" href="#">
+                                                        <span>
+                                           Подпункт Відділ організації діяльності керівництва
+                                        </span>
+                                                            <span class="line"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item col-xl-3  col-lg-6">
+                                            <a class="nav-link" href="#">
+                                                        <span>
+                                           Подпункт Відділ організації діяльності керівництва
+                                        </span>
+                                                <span class="line"></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item col-xl-3  col-lg-6">
+                                            <a class="nav-link" href="#">
+                                                        <span>
+                                           Подпункт Відділ організації діяльності керівництва
+                                        </span>
+                                                <span class="line"></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item col-xl-3  col-lg-6">
+                                            <a class="nav-link" href="#">
+                                                        <span>
+                                           Подпункт Відділ організації діяльності керівництва
+                                        </span>
+                                                <span class="line"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="position-relative">
+                <div class="search-form">
+                    <div class="close-button"></div>
+                    <div class="btns-wrap">
+                        <a href="#" class="button-form">
+                            <span>Шукати на порталі</span>
+                        </a>
+                        <span class="or">або</span>
+                        <a href="#" class="dashed">
+                            <span>серед нормативно-правових актів</span>
+                        </a>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-9 flex-column search-input-block d-flex">
+                                <label><span>Ключові слова</span>
+                                    <input type="text"></label>
+                            </div>
+                            <div class="col-sm-3 align-items-end d-flex">
+                                <label class="d-flex w-100">
+                                    <input type="submit" class="search-button" value="Знайти">
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container-fluid container-xl">
+    <div class="container-breadcrumb">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb d-flex">
+            <li class="breadcrumb-item home d-flex align-items-center"><a href="#" class="home-icon d-inline-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                     id="Capa_1" x="0px" y="0px" viewBox="0 0 512.001 512.001"
+                     style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M503.402,228.885L273.684,19.567c-10.083-9.189-25.288-9.188-35.367-0.001L8.598,228.886    c-8.077,7.36-10.745,18.7-6.799,28.889c3.947,10.189,13.557,16.772,24.484,16.772h36.69v209.721    c0,8.315,6.742,15.057,15.057,15.057h125.914c8.315,0,15.057-6.741,15.057-15.057V356.932h74.002v127.337    c0,8.315,6.742,15.057,15.057,15.057h125.908c8.315,0,15.057-6.741,15.057-15.057V274.547h36.697    c10.926,0,20.537-6.584,24.484-16.772C514.147,247.585,511.479,236.246,503.402,228.885z"/>
+	</g>
+</g>
+                    <g>
+	<g>
+		<path d="M445.092,42.73H343.973l116.176,105.636v-90.58C460.149,49.471,453.408,42.73,445.092,42.73z"/>
+	</g>
+</g>
+                    <g>
+</g>
+                    <g>
+</g>
+                    <g>
+</g>
+                    <g>
+</g>
+                    <g>
+</g>
+                    <g>
+</g>
+                    <g>
+</g>
+                    <g>
+</g>
+                    <g>
+</g>
+                    <g>
+</g>
+                    <g>
+</g>
+                    <g>
+</g>
+                    <g>
+</g>
+                    <g>
+</g>
+                    <g>
+</g>
+</svg>
+            </a></li>
+            <li class="breadcrumb-item d-flex align-items-center"><a href="#"><span>Про місто</span></a></li>
+            <li class="breadcrumb-item d-flex align-items-center"><a href="#"><span>Загальна інформація про місто Кривий Ріг</span></a></li>
+            <li class="breadcrumb-item d-flex align-items-center active" aria-current="page"><span>Засоби масової інформації та зв’язку</span></li>
+        </ol>
+    </nav>
+        <div class="like heart-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="437.775px" height="437.774px" viewBox="0 0 437.775 437.774" style="enable-background:new 0 0 437.775 437.774;" xml:space="preserve">
+<g>
+	<path d="M316.722,29.761c66.852,0,121.053,54.202,121.053,121.041c0,110.478-218.893,257.212-218.893,257.212S0,266.569,0,150.801   C0,67.584,54.202,29.761,121.041,29.761c40.262,0,75.827,19.745,97.841,49.976C240.899,49.506,276.47,29.761,316.722,29.761z"/>
+</g>
+                <g>
+</g>
+                <g>
+</g>
+                <g>
+</g>
+                <g>
+</g>
+                <g>
+</g>
+                <g>
+</g>
+                <g>
+</g>
+                <g>
+</g>
+                <g>
+</g>
+                <g>
+</g>
+                <g>
+</g>
+                <g>
+</g>
+                <g>
+</g>
+                <g>
+</g>
+                <g>
+</g>
+</svg>
+        </div>
+</div>
+    <div class="row article-content">
+        <div class="col-xl-9">
+            <div class="d-flex flex-column align-items-center">
+                <p class="heading">Засоби масової інформації та зв’язку</p>
+                <div class="details-heading"><span>оновлено: 21 квітня 2021</span></div>
+                <div class="labels d-flex flex-wrap">
+                    <a href="#" class="label"><span>Публічна інформація</span></a>
+                    <a href="#" class="label"><span>Програма мера - 2021</span></a>
+                </div>
+                <div class="inner-content">
+                    <p>Вітаю вас на офіційному вебсайті Криворізької міської ради та її виконавчого комітету. Кривий Ріг - відкрите місто. Відкрите для гостей, для інвестицій, цікавих проєктів та пропозицій. Діяльність міської влади також відкрита та прозора. На офіційному вебсайті ви можете знайти детальну інформацію про бюджет міста та його використання, програми розвитку Кривого Рогу, умови для участі в різноманітних конкурсах та висловити думку з питань розвитку і життя нашого міста.</p>
+                <p>
+                    Кривий Ріг добре відомий в Україні та за її межами як найбільший промисловий центр. Також сьогодні він зміцнює свої позиції як місто, у якому реалізуються унікальні соціальні програми, розвивається освіта, спорт та культура, упроваджуються нові інноваційні та інфраструктурні проєкти, а на основі кращих світових практик будуються взаємини влади та мешканців міста. Наша спільна мета - зробити Кривий Ріг містом комфортним і зручним для всіх його жителів. Містом, що динамічно розвивається та стає сучасним. Ми працюємо саме для цього.
+                </p>
+                    <p>
+                        Вітаю вас на офіційному вебсайті Криворізької міської ради та її виконавчого комітету. Кривий Ріг - відкрите місто. Відкрите для гостей, для інвестицій, цікавих проєктів та пропозицій. Діяльність міської влади також відкрита та прозора. На офіційному вебсайті ви можете знайти детальну інформацію про бюджет міста та його використання, програми розвитку Кривого Рогу, умови для участі в різноманітних конкурсах та висловити думку з питань розвитку і життя нашого міста.
+                    </p>
+                    <p>
+                        <a href="#">Посилання в контенті (#004bc1)</a>
+                    </p>
+                    <p><b>Жирний (#1c3a5a)</b></p>
+                    <ul class="list">
+                        <li><span>Список не нумерованный</span></li>
+                        <li><span>Список не нумерованный</span></li>
+                        <li><span>Список не нумерованный</span></li>
+                        <li><span>Список не нумерованный</span></li>
+                    </ul>
+                    <ul class="list-number">
+                        <li><span>Список нумерованный</span></li>
+                        <li><span>Список нумерованный</span></li>
+                        <li><span>Список нумерованный</span></li>
+                        <li><span>Список нумерованный</span></li>
+                    </ul>
+                    <p>Кривий Ріг добре відомий в Україні та за її межами як найбільший промисловий центр. Також сьогодні він зміцнює свої позиції як місто, у якому реалізуються унікальні соціальні програми, розвивається освіта, спорт та культура, упроваджуються нові інноваційні та інфраструктурні проєкти, а на основі кращих світових практик будуються взаємини влади та мешканців міста. Наша спільна мета - зробити Кривий Ріг містом комфортним і зручним для всіх його жителів. Містом, що динамічно розвивається та стає сучасним. Ми працюємо саме для цього. </p>
+                </div>
+                <div class="d-flex justify-content-between flex-md-row flex-column w-100 article-footer">
+                    <div class="details-heading"><span>оновлено: 21 квітня 2021</span></div>
+                    <a href="#" class="article-footer-button d-flex align-items-center"><span class="print-icon icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>print</title><g id="Layer_10" data-name="Layer 10"><path class="cls-1" d="M23,8H22V3H8V8H7a4,4,0,0,0-4,4v8a3,3,0,0,0,3,3H8v4H22V23h2a3,3,0,0,0,3-3V12A4,4,0,0,0,23,8ZM10,5H20V8H10ZM20,25H10V19H20Zm5-5a1,1,0,0,1-1,1H22V19a1,1,0,0,0,0-2H8a1,1,0,0,0,0,2v2H6a1,1,0,0,1-1-1V12a2,2,0,0,1,2-2H23a2,2,0,0,1,2,2Z"/><path class="cls-1" d="M13,23h4a1,1,0,0,0,0-2H13a1,1,0,0,0,0,2Z"/><path class="cls-1" d="M22,12H21a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Z"/></g></svg>
+                    </span><span>версія для друку</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 overflow-hidden">
+            <div class="menu-type-inner d-flex flex-column">
+                <div class="toggler-icon d-xl-none">
+                    <div class="menu-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>menu</title><g id="Layer_10" data-name="Layer 10"><rect class="cls-1" x="5" y="6.75" width="20" height="2"/><rect class="cls-1" x="5" y="13.75" width="20" height="2"/><rect class="cls-1" x="5" y="20.75" width="20" height="2"/></g></svg>
+                    </div>
+                    <div class="close-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>close</title><g id="Layer_10" data-name="Layer 10"><path class="cls-1" d="M15,13.59l-4.9-4.9A7.27,7.27,0,0,0,8.68,10.1l4.9,4.9-4.9,4.9a7.27,7.27,0,0,0,1.41,1.41l4.9-4.9,4.9,4.9a7.27,7.27,0,0,0,1.41-1.41L16.41,15l4.9-4.9A7.27,7.27,0,0,0,19.9,8.68Z"/></g></svg>
+                    </div>
+                </div>
+                <div class="name">
+                    <span>Інформація про місто</span>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="item"><a href="#"><span>Загальна інформація про
+місто Кривий Ріг</span></a></li>
+                        <li class="item"><a href="#"><span>Засоби масової інформації
+та зв’язку</span></a></li>
+                        <li class="item"><a href="#"><span>Перелік телефонних номерів
+для звернень громадян</span></a></li>
+                        <li class="item"><a href="#"><span>Події та анонси</span></a></li>
+                        <li class="item"><a href="#"><span>Новини</span></a></li>
+                        <li class="item"><a href="#"><span>Лічільник перглядів</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divider-blue"></div>
+</div>
+<footer>
+    <div class="container-fluid container-xl">
+        <div>
+            <a class="d-inline-flex align-items-center text-decoration-none heading-content" href="#">
+                <p class="heading">Мапа порталу</p>
+                <span class="icon icon-sitemaps d-inline-flex align-items-center">
+                    <svg height="19" id="Capa_1" version="1.1"
+                         viewBox="0 0 360.536 360.536" width="19" x="0px" xml:space="preserve"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<path d="M301.118,237.566c-9.448,0-18.381,2.227-26.321,6.167l-79.529-51.846v-43.694  c33.417-6.546,58.713-36.042,58.713-71.347c0-40.094-32.619-72.713-72.713-72.713s-72.713,32.619-72.713,72.713  c0,34.596,24.294,63.606,56.713,70.917v44.124l-79.529,51.846c-7.939-3.94-16.873-6.167-26.321-6.167  C26.655,237.566,0,264.221,0,296.985s26.655,59.418,59.418,59.418c32.763,0,59.418-26.654,59.418-59.418  c0-12.045-3.613-23.257-9.797-32.63l70.117-45.71c0.368,0.027,0.736,0.056,1.111,0.056s0.743-0.029,1.111-0.056l70.117,45.71  c-6.184,9.373-9.797,20.585-9.797,32.63c0,32.764,26.655,59.418,59.418,59.418c32.764,0,59.418-26.654,59.418-59.418  S333.881,237.566,301.118,237.566z"/>
+</svg>
+                </span>
+            </a>
+            <div class="row contacts flex-lg-nowrap align-content-between footer-first-level">
+                <div class="col-xl-6 d-flex contacts-footer-main">
+                    <div class="d-flex flex-column logo-footer">
+                        <img src="img/kr_footer.png">
+                    </div>
+                    <div class="d-flex flex-column contacts-logo-footer">
+                        <div class="d-inline-flex flex-column">
+                            <span class="name d-flex">Виконавчий комітет Криворізької міської ради</span>
+                            <span class="description d-flex">50101, Україна, Дніпропетровська обл., м.Кривий Ріг, пл. Молодіжна 1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 d-flex flex-column contacts-footer">
+                    <span class="name">Телефони</span>
+                    <a class="description text-decoration-none" href="tel:0442814934">(044) 281 49 34,</a>
+                    <a class="description text-decoration-none" href="tel:0442814918">(044) 281 49 18 (факс)</a>
+                </div>
+                <div class="col-xl-2 d-flex flex-column contacts-footer">
+                    <span class="name">Гаряча лінія</span>
+                    <a class="description text-decoration-none" href="mailto:rada.kryvyirih@kr.gov.ua">rada.kryvyirih@kr.gov.ua</a>
+                </div>
+                <div class="col-xl-2 d-flex flex-column contacts-footer">
+                    <span class="name">Електронна пошта</span>
+                    <a class="description text-decoration-none" href="mailto:rada.kryvyirih@kr.gov.ua">rada.kryvyirih@kr.gov.ua</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="divider-grey"></div>
+        <div class="row footer-second-level justify-content-center justify-content-lg-start">
+            <div class="col-xl-6 col-lg-5 col-md-8 right-block">
+                <div class="d-flex align-items-center justify-content-md-start mb-36">
+                    <div class="icon-trezub d-flex align-items-center justify-content-center">
+                        <svg height="44" id="svg7657"
+                             version="1.1" viewBox="0 0 330 460" width="68"
+                             x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+
+                            <path class="st0"
+                                  d="M165,30c-9.3,10.6-15,24.4-15,39.6c0.6,33.4,4.6,66.7,5,100c0.7,31.1-8.6,60.3-19.9,88.8  c-3.8,7.9-7.9,15.6-12,23.3l-12-2.4c-10.8-2.2-17.9-12.7-15.7-23.5c1.9-9.5,10.2-16.1,19.5-16.1l4.4,0.5l-9.8-81.6  c-3.2-36.3-21.9-68.2-49.5-88.9c-4.7-3.6-9.8-6.8-15-9.7v289.7h66.9c5,27.1,19.9,50.8,40.9,67c5,3.4,9.2,8,12.2,13.3  c3-5.3,7.2-9.8,12.2-13.3c21-16.2,35.9-39.9,40.9-67H285V59.9c-5.2,2.9-10.3,6.1-15,9.7c-27.6,20.7-46.3,52.6-49.5,88.9l-9.8,81.6  l4.4-0.5c9.3,0,17.6,6.6,19.5,16.1c2.2,10.8-4.9,21.4-15.7,23.5l-12,2.4c-4.1-7.7-8.2-15.4-12-23.3c-11.3-28.5-20.7-57.7-19.9-88.8  c0.4-33.4,4.4-66.7,5-100C180,54.4,174.3,40.6,165,30z M65,101.7c12.9,15.2,21.6,34.1,24.2,54.9l8,67.3c-10.2,5.1-18,14.5-20.9,25.8  H65C65,249.7,65,101.7,65,101.7z M265,101.7v148h-11.3c-2.9-11.3-10.7-20.7-20.9-25.8l8-67.3C243.4,135.8,252.1,116.8,265,101.7z   M165,236.9c5.4,17.6,12.8,34.3,22,49.8c-8.7,2.7-16.3,7.8-22,14.8c-5.6-6.9-13.2-12.1-22-14.8C152.2,271.2,159.6,254.5,165,236.9z   M65,269.7h11.3c3.6,13.8,14.3,24.7,28,28.5l9.6,2.2c-2.6,9.3-4,19.2-4,29.3H65V269.7z M253.7,269.7H265v60h-45  c0-10.1-1.4-20-4-29.3l9.6-2.2C239.3,294.4,250.1,283.5,253.7,269.7L253.7,269.7z M133.5,305c12.1,1.7,21.5,12.1,21.5,24.7h-25  C130,321.1,131.3,312.8,133.5,305z M196.5,305c2.2,7.9,3.5,16.1,3.5,24.7h-25C175,317.1,184.4,306.7,196.5,305z M132.3,349.7H155  v42.1C144,380.3,136,365.8,132.3,349.7z M175,349.7h22.7c-3.7,16.1-11.7,30.6-22.7,42.1V349.7z"
+                                  id="path7306"/>
+</svg>
+                    </div>
+
+                    <span class="description">Власність виконавчого комітету <br/>Криворізької міської ради</span>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="icon-creative-commons d-flex align-items-center justify-content-center">
+                        <svg data-name="Layer 5" height="82" id="Layer_5" viewBox="0 0 30 30" width="82"
+                             xmlns="http://www.w3.org/2000/svg"><title>creative-commons</title>
+                            <path class="cls-1"
+                                  d="M15,3A12,12,0,1,0,27,15,12,12,0,0,0,15,3Zm0,22A10,10,0,1,1,25,15,10,10,0,0,1,15,25Z"/>
+                            <path class="cls-2"
+                                  d="M11.59,17A2,2,0,1,1,13,13.59l1.41-1.41a4,4,0,1,0,0,5.66L13,16.41A2,2,0,0,1,11.59,17Z"/>
+                            <path class="cls-2"
+                                  d="M19.59,17A2,2,0,1,1,21,13.59l1.41-1.41a4,4,0,1,0,0,5.66L21,16.41A2,2,0,0,1,19.59,17Z"/>
+                        </svg>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center">
+                        <span class="description">Увесь вміст доступний за ліцензією</span>
+                        <span class="description blue">Creative Commons Attribution 4.0 International license, </span>
+                        <span class="description">якщо не зазначено інше</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 flex-column d-flex align-items-md-end">
+                <a class="application-link" href="#">
+                    <img src="img/google_play.jpg">
+                </a>
+                <a class="application-link" href="#">
+                    <img src="img/app_store.jpg">
+                </a>
+            </div>
+            <div class="col-xl-2 col-lg-3 d-flex flex-column  align-items-lg-center footer-links">
+                <div class="d-flex flex-lg-column flex-md-row flex-column justify-content-lg-start justify-content-center justify-content-md-between">
+                    <div class="about-links">
+                        <a class="d-flex align-items-center link" href="#">
+                            <div class="icon icon-youtube">
+                                <svg height="29px" viewBox="0 0 30 30" width="29px" xmlns="http://www.w3.org/2000/svg">
+                                    <title>youtube</title>
+                                    <g data-name="Layer 10" id="Layer_10">
+                                        <path class="cls-1"
+                                              d="M24,24H6a3,3,0,0,1-3-3V9A3,3,0,0,1,6,6H24a3,3,0,0,1,3,3V21A3,3,0,0,1,24,24ZM6,8A1,1,0,0,0,5,9V21a1,1,0,0,0,1,1H24a1,1,0,0,0,1-1V9a1,1,0,0,0-1-1Z"/>
+                                        <polygon class="cls-1" points="12 11 12 19 20 15 12 11"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span>
+                            Youtube-канал
+                        </span>
+                        </a>
+                        <a class="d-flex align-items-center link" href="#">
+                            <div class="icon icon-facebook">
+                                <svg height="42" viewBox="0 0 30 30" width="39" xmlns="http://www.w3.org/2000/svg">
+                                    <title>facebook</title>
+                                    <g data-name="Layer 10" id="Layer_10">
+                                        <path class="cls-1"
+                                              d="M23,9.67A2.76,2.76,0,0,0,20.33,7H9.67A2.77,2.77,0,0,0,7,9.67V20.33A2.76,2.76,0,0,0,9.67,23H15V17H13V14.29h2v-1a3.28,3.28,0,0,1,3-3.41h2.16v2.67H18c-.24,0-.51.29-.51.72v1.06h2.67V17H17.49v6h2.84A2.76,2.76,0,0,0,23,20.33Z"
+                                              data-name="Facebook (alt)"
+                                              id="Facebook_alt_"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span>
+                            Facebook
+                        </span>
+                        </a>
+                        <a class="d-flex align-items-center link" href="#">
+                            <div class="icon icon-instagram d-inline-flex align-items-center">
+                                <svg height="24" viewBox="0 0 511 511.9" width="24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/>
+                                    <path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/>
+                                    <path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/>
+                                </svg>
+                            </div>
+                            <span>
+                            Instagram
+                        </span>
+                        </a>
+                    </div>
+                    <div class="developer-links">
+                        <a class="d-flex" href="#">
+                            <div class="icon icon-developer">
+                                <svg
+                                        height="25px"
+                                        width="25px"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <image height="25px" width="25px" x="0px"
+                                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAAB3RJTUUH5QQcAAsqXV1+awAABD5JREFUSMd11musXVUVBeBvnHtabhOqFcTwCyKR9AaDsRKw5VFeBkxoKw2SaHgZBBRpeCZoScAExaJBRdGIRAlQMEoNLwlNKZAaHiIWFIwppKYhpCCCFpoSWvu40x9rn3vORdkn+8deZ+051xhrjLF25p14jqD8/yscVJyIYzGBfbAdr+DJ8Ejx9HvemVav934NIh+P/Bp/xy2YH17HOvw18hFciT+EZ3Ha4N3qGnV19E0NTGt3eanvYQuW466wuUZmlRIZL7UYl4bfFvfhq+GfowvumSpdirFqq/4+bsbB+G5a7Qvwpa7RJ8PXS83DqnBUcQaOCY9h7jS6ahoSN4bzizfCVUi4rXil+Dm+2C1qLq7HU1hPFkZ+FXmoyiHFg9hvQF5vBP7ZWIYVWtF1eL5YiivCMwPQYbLYgQuxq9TvqbXUksQ1Yb/wi2lIsH/kh2kruCpch3l4CR/FD7A10u8WlUgPv8ECLC8+U6wtvlVcUCzB6dXUFTi/1JzikmJ2cV2YDE/gc5hBUqpGuY6M4zhsCy+Gz0dOwt1N3rkWe/VK7R3O05SxKZyCD2JT8ZWOqhnU7lHFVPvtwMm4uhPNplJnRkSur6oJHNEPE+SAcEmpFL/Dg8Vkp4YB/3thT6TpsF0fwDXh29WQw5hW53GxDYv6xQJN8z8ON5B3Su0Je1fnq8Z/fQyPNn/oFTPD49XcPxDpzmJ7mNM9zw5H9sPG4uZSPUxGLcLM4t4wNuUgHgvrOwQb8DPMGLHw7uIQLKwmiK1a5GzIILsMabgNc8KpI2MyFRRl1PnvyYqTwwNkdqmdA077OLzdNdbN/RTGi2VRoz6axEaswUH4bNpmp2s6iSMajbU8sqXRns19LCh+FLamQd6t3d8cRo5gXzyMNeHw4qd4B7syBLNHy7hL054/RD3Rxx+7OueUWhvGsbNT1TBwWF3D1K7ILmp+8XK1DKyhuqBmYUPxlz7+hjepJeH+aj65uGs0G1uLReHdNHoHe1PFq5ELqdOxrdiTlhIX41BNZff2Osgr8YXiw+FJTIQTwkvhBY33sRH6BhqYiX+QP2mheVJNKTBXhs14utdNv6nohxXFa+Fr3fjO4grNjL2aVr8JstRdpdYV+6Slxh3F8VW1uPgO3u2lyfNlXE3Ow7nVzo3XtWh/MbK0eSJTfdI2+bCOhVXdhh+JM3GreCb8EvqDAytyA+Zrf7wVDq2WYbdQ93RxsmboFrMiq6k3ii+H24u7w8ri7RaUzSsjx29N4qxuVScUS8NPqhwtOYY6tRMB7Xi9k3qkK7wdCyJzS22JLCm1cQr10PFTmzreZdhFeI5aUdzTmW3kIyED/38Cl6VR/Gzk3FIvjCZCP/8THbUDy6j7qx1eqyL/LrU+PId/YVapCXwaB6eNfSPcSP1nWlJXh2Q0fwYTRtAtxGIcjwMjfaqat/wZD2A13pp+oA2R/BfCbdRNcqo33gAAAABJRU5ErkJggg=="
+                                           y="0px"/>
+                                </svg>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                            <span class="name">
+                            ФОП Патинко Юрій
+                        </span>
+                                <span class="description">
+                                розробник порталу
+                            </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

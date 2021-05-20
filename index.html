@@ -763,8 +763,8 @@
         </div>
     </div>
     <div class="news-block">
-        <div class="d-flex justify-content-between w-100 filter">
-            <ul class="nav nav-tabs tabs-type-first-level" id="firstLevelTab" role="tablist">
+        <div class="d-flex justify-content-between flex-md-row flex-column w-100 filter">
+            <ul class="nav nav-tabs tabs-type-first-level order-md-0 order-1" id="firstLevelTab" role="tablist">
                 <li class="nav-item">
                     <a aria-controls="vse" aria-selected="true" class="nav-link active" data-toggle="tab" href="#vse"
                        id="vse-tab" role="tab">Все</a>
@@ -784,7 +784,7 @@
                        id="povіdomlennya-tab" role="tab">Повідомлення</a>
                 </li>
             </ul>
-            <div class="d-flex align-items-start pagination">
+            <div class="d-flex pagination order-md-1 order-0 align-items-start justify-content-end">
                 <div>
                     <div class="icon icon-inactive" onclick="prevNews(event)">
                         <svg height="31px" viewBox="0 0 30 30" width="28px" xmlns="http://www.w3.org/2000/svg">
@@ -805,7 +805,7 @@
                         </svg>
                     </div>
                 </div>
-                <div class="icon icon-rss">
+                <div class="icon icon-rss flex-md-grow-1 flex-grow-0">
                     <svg height="31px" viewBox="0 0 30 30" width="33px" xmlns="http://www.w3.org/2000/svg"><title>
                         rss</title>
                         <g data-name="Layer 10" id="Layer_10">
@@ -962,7 +962,7 @@
                                                 </span>
                                             </div>
                                         </a>
-                                        <a class="col-sm-6 d-flex flex-column news mt-0" href="#">
+                                        <a class="col-sm-6 d-flex flex-column news mt-sm-0" href="#">
                                             <div class="image">
                                                 <img src="img/news.jpg">
                                             </div>
@@ -1182,17 +1182,17 @@
             </div>
             <div class="col-xl-3 banners-container d-flex flex-xl-column flex-sm-row flex-column align-items-start">
                 <div class="row flex-lg-wrap big-banners">
-                    <a class="banner d-flex col-xl-12 justify-content-center justify-content-sm-start" href="#">
-                        <img class="mw-100" src="img/banner.jpg">
+                    <a class="banner d-flex justify-content-center justify-content-sm-start overflow-hidden position-relative" href="#">
+                        <img src="img/banner.jpg">
                     </a>
-                    <a class="banner d-flex col-xl-12 justify-content-center justify-content-sm-start" href="#">
-                        <img class="mw-100" src="img/banner.jpg">
+                    <a class="banner d-flex justify-content-center justify-content-sm-start overflow-hidden position-relative" href="#">
+                        <img src="img/banner.jpg">
                     </a>
                 </div>
                 <div class="row flex-lg-wrap mini-banners">
                     <a class="sm-banner d-flex align-items-center col-xl-12 col-lg-4" href="#">
-                        <div class="overflow-hidden img">
-                            <img class="w-100" src="img/sm_banner.jpg">
+                        <div class="overflow-hidden img position-relative">
+                            <img src="img/sm_banner.jpg">
                         </div>
                         <div class="text">
                         <span>
@@ -1201,8 +1201,8 @@
                         </div>
                     </a>
                     <a class="sm-banner d-flex align-items-center col-xl-12 col-lg-4" href="#">
-                        <div class="overflow-hidden img">
-                            <img class="w-100" src="img/sm_banner.jpg">
+                        <div class="overflow-hidden img position-relative">
+                            <img src="img/sm_banner.jpg">
                         </div>
                         <div class="text">
                         <span>
@@ -1211,8 +1211,8 @@
                         </div>
                     </a>
                     <a class="sm-banner d-flex align-items-center col-xl-12 col-lg-4" href="#">
-                        <div class="overflow-hidden img">
-                            <img class="w-100" src="img/sm_banner.jpg">
+                        <div class="overflow-hidden img position-relative">
+                            <img src="img/sm_banner.jpg">
                         </div>
                         <div class="text">
                         <span>
@@ -1221,8 +1221,8 @@
                         </div>
                     </a>
                     <a class="sm-banner d-flex align-items-center col-xl-12 col-lg-4" href="#">
-                        <div class="overflow-hidden img">
-                            <img class="w-100" src="img/sm_banner.jpg">
+                        <div class="overflow-hidden img position-relative">
+                            <img src="img/sm_banner.jpg">
                         </div>
                         <div class="text">
                         <span>
@@ -1231,8 +1231,8 @@
                         </div>
                     </a>
                     <a class="sm-banner d-flex align-items-center col-xl-12 col-lg-4" href="#">
-                        <div class="overflow-hidden img">
-                            <img class="w-100" src="img/sm_banner.jpg">
+                        <div class="overflow-hidden img position-relative">
+                            <img src="img/sm_banner.jpg">
                         </div>
                         <div class="text">
                         <span>
@@ -1241,8 +1241,8 @@
                         </div>
                     </a>
                     <a class="sm-banner d-flex align-items-center col-xl-12 col-lg-4" href="#">
-                        <div class="overflow-hidden img">
-                            <img class="w-100" src="img/sm_banner.jpg">
+                        <div class="overflow-hidden img position-relative">
+                            <img src="img/sm_banner.jpg">
                         </div>
                         <div class="text">
                         <span>
@@ -1251,8 +1251,8 @@
                         </div>
                     </a>
                     <a class="sm-banner d-flex align-items-center col-xl-12 col-lg-4" href="#">
-                        <div class="overflow-hidden img">
-                            <img class="w-100" src="img/sm_banner.jpg">
+                        <div class="overflow-hidden img position-relative">
+                            <img src="img/sm_banner.jpg">
                         </div>
                         <div class="text">
                         <span>
@@ -1261,8 +1261,8 @@
                         </div>
                     </a>
                     <a class="sm-banner d-flex align-items-center col-xl-12 col-lg-4" href="#">
-                        <div class="overflow-hidden img">
-                            <img class="w-100" src="img/sm_banner.jpg">
+                        <div class="overflow-hidden img position-relative">
+                            <img src="img/sm_banner.jpg">
                         </div>
                         <div class="text">
                         <span>

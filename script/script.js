@@ -4,6 +4,7 @@ $(document).ready(function () {
     cabinetMenu()
     searchMenu()
     menuTypeInner()
+    sizeVideo()
     switchListItem($('.listWithMore'));
     $(window).resize(function () {
         switchListItem($('.listWithMore'));

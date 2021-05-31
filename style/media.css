@@ -70,7 +70,7 @@
 
     .right-header .item-eye{
         position: absolute;
-        top: 12px;
+        top: 9px;
         left: 66px;
         z-index: 999;
     }
@@ -105,7 +105,7 @@
         scrollbar-color: #cccccc;
     scrollbar-width: thin;
         transition: transform 0.3s linear;
-        transform: translate(0, -100%);
+        transform: translate(100%, 0);
     }
 
     .main-menu.show .navbar-mainMenu{
@@ -215,7 +215,7 @@
         position: static;
     }
     .submenu.menu-type-cabinet{
-        transform: translate(0, -100%);
+        transform: translate(-100%, 0);
         position: fixed;
         bottom: 0;
         left: 0;
@@ -360,6 +360,15 @@ padding-left: 11px;
     .banners-container .banner:last-child{
         margin-bottom: 0;
     }
+    .navbar-brand .icon.icon-hide-type1, .navbar-brand .icon.icon-hide-type2{
+        width: 28px;
+        height: 28px;
+    }
+    .icon-hide-type1 svg, .icon-hide-type2 svg {
+        width: 34px !important;
+        height: 34px !important;
+        transform: translate(-3px, -6px);
+    }
 }
 @media (max-width: 1000px) {
     .service .service-item:nth-child(5n + 1) {
@@ -427,6 +436,10 @@ padding-left: 11px;
     }
     .public-information-video{
         margin-bottom: 32px;
+    }
+    .main-menu .first-level:nth-child(2n + 1),
+    .main-menu .first-level:nth-child(2n){
+        padding: 0 15px;
     }
 }
 
@@ -526,6 +539,13 @@ margin-bottom: 24px;
         max-width: 100%;
     }
 }
+@media (max-width: 640px) {
+    .tabs-type-service-block .nav-item:first-child{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
 @media (max-width: 600px) {
     .gallery-container {
         width: calc(100% - 30px);
@@ -560,6 +580,7 @@ margin-bottom: 24px;
     .big-banners, .mini-banners{
         flex: 0 0 100%;
         max-width: 100%;
+        justify-content: center;
     }
     .contacts-logo-footer > div{
         width: auto;
@@ -641,7 +662,10 @@ margin-top: 88px;
         font-size: 22px;
     }
     .big-banners .banner{
-        margin:  0 auto;
+        margin:  0 10px 20px;
+    }
+    .banners-container .banner:last-child{
+        margin:  0 10px 40px;
     }
 }
 @media (max-width: 390px) {
@@ -652,5 +676,19 @@ margin-top: 88px;
     .service {
         max-width: 165px;
         margin: 0 auto;
+    }
+    .news-block .tabs-type-first-level .nav-link{
+        font-size: 16px;
+    }
+    .font-plus2 .news-block .tabs-type-first-level .nav-link{
+        font-size: 18px;
+    }
+    .font-plus4 .news-block .tabs-type-first-level .nav-link{
+        font-size: 20px;
+    }
+}
+@media (max-width: 340px) {
+    .right-header .item-eye {
+        left: 46px;
     }
 }
